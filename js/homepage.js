@@ -120,7 +120,7 @@ $(function () {
         $(this).parent().next().addClass('fanzhuan1');
 	})
     $('.back_service_content1').mouseleave(function(){
-        $(this).parent().prev().removeClass('fanzhuanmargin');
+        $(this).parent().prev().addClass('fanzhuanmargin');
         $(this).parent().removeClass('fanzhuan1').addClass('fanzhuan2');
         $(this).parent().parent().siblings('li').children('front').removeClass('fanzhuan2').addClass('fanzhuan1');
         // $(this).parent().parent().siblings('li').children('front').addClass('fanzhuanmargin');

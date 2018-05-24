@@ -56,7 +56,7 @@ a{
     -webkit-transition: all 0.2s;
 }
 .fanzhuanmargin{
-    margin-left: 0 !important;
+    margin-left: 28px !important;
 }
 
 /* 公共头部 */
@@ -239,14 +239,14 @@ header{
     width: 100%;
     background-image: url(../image/banner1.png);
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
 }
 .two{
     height: 785px;
     width: 100%;
     background-image: url(../image/banner2.png);
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: cover;
 }
 .one>img{
      width: 100%; 
@@ -301,7 +301,7 @@ video{
     height: 455px;
     background-image: url(../image/trouble.svg);
     background-repeat: no-repeat;
-    background-size: 100% 455px;
+    background-size: cover;
     position: relative;
 }
 .trouble_within{
@@ -470,7 +470,7 @@ video{
     width: 100%;
     height: 548px;
     background-image: url(../image/intro.png);
-    background-size: auto 130%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
@@ -541,7 +541,7 @@ video{
     right: -1500px;
 }
 .advantage_padding{
-    height: 486px;
+    height: 512px;
 }
 .out_advantage{
     width: 100%;
@@ -616,7 +616,7 @@ video{
     width: 100%;
     height: 686px;
     background-image: url(../image/service.png);
-    background-size: auto 130%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
@@ -645,8 +645,7 @@ video{
     background-position: 0 bottom;
     width: 247px;
     height: 410px;
-    /* margin-left: 28px; */
-    /* left: 28px; */
+    margin-left: 28px;
     margin-top: 26px;
 }
 .back{
@@ -988,7 +987,7 @@ video{
     width: 100%;
     height: 694px;
     background-image: url(../image/sence.png);
-    background-size: auto 130%;
+    background-size: cover;
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -1006,7 +1005,7 @@ video{
     margin-top: 30px;
     height: 508px;
     background-image: url(../image/sence.svg);
-    background-size: 430px 480px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: 322px 0;
     position: relative;
@@ -1396,7 +1395,7 @@ video{
 .news{
     height: 564px;
     background-image: url(../image/news.png);
-    background-size: auto 130%;
+    background-size: cover;
     position: relative;
     overflow: hidden;
     background-repeat: no-repeat;
