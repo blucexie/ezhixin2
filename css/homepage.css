@@ -55,9 +55,9 @@ a{
     -o-transition: all 0.2s;
     -webkit-transition: all 0.2s;
 }
-.fanzhuanmargin{
+/* .fanzhuanmargin{
     margin-left: 28px !important;
-}
+} */
 
 /* 公共头部 */
 .odd{
@@ -645,7 +645,6 @@ video{
     background-position: 0 bottom;
     width: 247px;
     height: 410px;
-    margin-left: 28px;
     margin-top: 26px;
 }
 .back{
