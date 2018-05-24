@@ -56,7 +56,7 @@ a{
     -webkit-transition: all 0.2s;
 }
 .fanzhuanmargin{
-    margin-left: 28px !important;
+    margin-left: 0 !important;
 }
 
 /* 公共头部 */
@@ -207,8 +207,14 @@ header{
 .header_r .login span:nth-child(1){
     cursor: pointer;
 }
+.header_r .login span:nth-child(1):hover{
+    color: #00adb4;
+}
 .header_r .login span:nth-child(3){
     cursor: pointer;
+}
+.header_r .login span:nth-child(3):hover{
+    color: #00adb4;
 }
 .header_r>.login>p{
     color: #ffffff;
@@ -1005,9 +1011,9 @@ video{
     margin-top: 30px;
     height: 508px;
     background-image: url(../image/sence.svg);
-    background-size: cover;
+    background-size: 428px 100%;
     background-repeat: no-repeat;
-    background-position: 322px 0;
+    background-position: 322px -12px;
     position: relative;
 }
 .sence_content ul li{
