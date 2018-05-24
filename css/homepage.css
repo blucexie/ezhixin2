@@ -1597,7 +1597,7 @@ footer{
     top: 60%;
     z-index: 2;
 }
-.phone>img{
+.phone>a>img{
     width: 160px;
     height: 110px;
 }
