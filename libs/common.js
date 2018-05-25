@@ -1,3 +1,34 @@
+$(function(){
+    /* 登录注册 */
+    $('.login span:nth-child(1)').click(function(){
+        window.location.href ="http://hr.ezhixin.com/login";
+    })
+    $('.login span:nth-child(3)').click(function(){
+        window.location.href ="http://hr.ezhixin.com/login";
+    })
+
+    $('.header_m ul li:nth-child(1) span').click(function(){
+        window.location.href = './index.html'
+    })
+    $('.header_m ul li:nth-child(2) span').click(function(){
+        window.location.href = './service.html'
+    })
+    $('.header_m ul li:nth-child(3) span').click(function(){
+        window.location.href = './aboutus.html'
+    })
+    $('.header_m ul li:nth-child(4) span').click(function(){
+        window.location.href = './faq.html'
+    })
+    $('.header_m ul li:nth-child(5) span').click(function(){
+        window.location.href = './news.html'
+    })
+    $('.header_m ul li:nth-child(6) span').click(function(){
+        window.location.href = './download.html'
+    })
+})
+
+
+
 function change(){
     $('header').addClass('header_active');
     $('.header_m ul li').addClass('headerContent_active');
