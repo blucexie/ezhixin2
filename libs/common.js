@@ -1,0 +1,41 @@
+function change(){
+    $('header').addClass('header_active');
+    $('.header_m ul li').addClass('headerContent_active');
+    $('.header_phone span').addClass('headerContent_active');
+    $('.login a').addClass('login_active');
+    $('.login span').addClass('login_active');
+    $('.login').addClass('loginBorder_active');
+    $('.logo1').hide();
+    $('.logo').show();
+    $('.headerphone').hide();
+    $('.headerphone1').show();
+}
+ //一、header部分
+    //滚动状态改变 悬浮置顶
+    $(window).scroll(function () {
+        var h = $(document).scrollTop();
+        if (h > 20) {
+            change();
+        } else {
+            $('header').removeClass("header_active");
+            $('.header_m ul li').removeClass('headerContent_active');
+            $('.header_phone span').removeClass('headerContent_active');
+            $('.login a').removeClass('login_active');
+            $('.login span').removeClass('login_active');
+            $('.login').removeClass('loginBorder_active');
+            $('.logo').hide();
+            $('.logo1').show();
+            $('.headerphone1').hide();
+            $('.headerphone').show();
+        }
+    })
+
+    //鼠标滑动显示active状态
+    $('.header_m li').mouseover(function(){
+        $(this).addClass('active');
+        $(this).children('p').next().removeClass('header_display');
+    })
+    $('.header_m li').mouseleave(function(){
+        $(this).removeClass('active');
+        $(this).children('p').next().addClass('header_display');
+    })
