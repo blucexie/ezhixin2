@@ -9,36 +9,6 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/FAQ.css">
     <script src="libs/jquery-3.2.1.min.js"></script>
-    <script>
-      /*   function browserRedirect() {
-                var sUserAgent = navigator.userAgent.toLowerCase();
-                var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-                var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-                var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-                var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-                var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-                var bIsAndroid = sUserAgent.match(/android/i) == "android";
-                var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-                var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-                if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-                    window.location.href = 'http://www.ezhixin.com/mobile/';
-                }else{
-                    window.location.href = 'http://www.ezhixin.com/index.html';
-                }
-            } 
-            browserRedirect();*/
-            /*获取ch*/
-            function GetQueryString(name) {
-                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-                var r = window.location.search.substr(1).match(reg);
-                if (r != null) return unescape(r[2]);
-                return null;
-            }
-            var ch = GetQueryString("ch");
-            if(ch!=null && typeof(ch) != "undefined" && ch != ""){
-				document.cookie = "ch=" + ch + ";domain=.ezhixin.com;path=/";
-			}
-    </script>
 </head>
 <body>
     <!-- header部分 -->
