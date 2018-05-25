@@ -37,7 +37,7 @@ $(function () {
         }
         if(h>1700){
             $('.common_service').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
-            $('.service_out').delay(500).fadeIn(3000);
+            $('.service_out').delay(500).fadeIn(4000);
         }
         if(h>2500){
             $('.common_flow').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
