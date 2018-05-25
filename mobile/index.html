@@ -19,6 +19,18 @@
             var hWidth = html.getBoundingClientRect().width;
             html.style.fontSize = hWidth / 15 + 'px';
         }();
+
+        /*获取ch*/
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+        var ch = GetQueryString("ch");
+        if (ch != null && typeof (ch) != "undefined" && ch != "") {
+            document.cookie = "ch=" + ch + ";domain=.ezhixin.com;path=/";
+        }
     </script>
 </head>
 
