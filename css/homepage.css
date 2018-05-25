@@ -15,6 +15,11 @@ ul,li{
 a{
     text-decoration: none;
 }
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
 .header_banxin{
     width: 1100px;
     height:75px;
@@ -55,9 +60,9 @@ a{
     -o-transition: all 0.2s;
     -webkit-transition: all 0.2s;
 }
-/* .fanzhuanmargin{
-    margin-left: 28px !important;
-} */
+.fanzhuanmargin{
+    margin-left: 0 !important;
+}
 
 /* 公共头部 */
 .odd{
@@ -207,8 +212,14 @@ header{
 .header_r .login span:nth-child(1){
     cursor: pointer;
 }
+.header_r .login span:nth-child(1):hover{
+    color: #00adb4;
+}
 .header_r .login span:nth-child(3){
     cursor: pointer;
+}
+.header_r .login span:nth-child(3):hover{
+    color: #00adb4;
 }
 .header_r>.login>p{
     color: #ffffff;
@@ -232,7 +243,7 @@ header{
     width:1100px;
     height: 100%;
     display: inline-block;
-    position: relative;
+   /*  position: relative; */
 }
 .one{
     height: 785px;
@@ -256,27 +267,34 @@ header{
 }
 .consult{
     width: 132px;
-    position: absolute;
+    margin-top: 600px;
+   /*  position: absolute;
     left: 0;
-    top: 600px;
+    top: 600px; */
+    /* margin-top: 600px; */
 }
 .consult>img{
     width: 100%;
 }
 .video_box{
+    float: right;
     width: 355px;
-    position: absolute;
+    margin-top: 234px;
+    margin-right: 100px;
+   /*  position: absolute;
     top:236px;
-    right: 0;
+    right: 0; */
 }
 video{
     width: 100%;
 }
 .banner_content{
+    float: left;
     width: 360px;
-    position: absolute;
+    margin-top: 230px;
+   /*  position: absolute;
     top: 236px;
-    left:0;
+    left:0; */
 }
 .banner_content>img{
     width: 100%;
@@ -1004,9 +1022,9 @@ video{
     margin-top: 30px;
     height: 508px;
     background-image: url(../image/sence.svg);
-    background-size: cover;
+    background-size: 428px 100%;
     background-repeat: no-repeat;
-    background-position: 322px 0;
+    background-position: 322px -12px;
     position: relative;
 }
 .sence_content ul li{
