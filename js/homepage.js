@@ -74,7 +74,6 @@ $(function () {
     //六、背调服务翻转
     $('.back_service_content').mouseover(function(){
         $(this).parent().addClass('fanzhuanmargin');
-
         $(this).parent().removeClass('fanzhuan1').addClass('fanzhuan2');
         $(this).parent().parent().siblings('li').children('.front').removeClass('fanzhuan2').addClass('fanzhuan1');
         $(this).parent().parent().siblings('li').children('.front').removeClass('fanzhuanmargin');
@@ -90,7 +89,47 @@ $(function () {
         $(this).parent().prev().addClass('fanzhuan1');
     })
 
+    // 十、新闻咨询
+   
+    var startIndex = 0;
+    var pageLimit = 4;
+    $.ajax({
+        type: 'post',
+        url: 'https://apix.funinhr.com/api/news/getList',
+        dataType: 'json',
+        data: { pageStart: startIndex,pageLimit:pageLimit },
+        success: function (data) {
+            startIndex = startIndex + 6;
+            $('.news_out').attr('index', startIndex);
+            var contentList = '';
+            $(data).each(function (i, v) {
+                var cid = v.cid;
+                var time = v.time;
+                var description = v.description;
+                var title = v.title;
+                var descriptionLength = description.length;
+                var titleLength = title.length;
+                if (titleLength>26) {
+                    title = title.substring(0,26) + '...';
+                }
+                if (descriptionLength>20) {
+                    description = description.substring(0, 20) + '...';
+                }
+                var content =
+                        '<li cid="'+cid+'">'+
+                            '<p class="newsTitle">'+title+'</p>'+
+                            '<p>'+time+'<span>'+description+'</span>'+'</p>'+
+                        '</li>'
+                contentList += content;
+            })
+            $('.news_r ul').html(contentList);
+        }
+    })
 
+    $('.news_r').on('click','.newsTitle',function(){
+        var cid = $(this).parent().attr('cid');
+        window.location.href = 'https://api.funinhr.com/api/news/viewNews?cid='+cid;
+    })
 
 
 });
