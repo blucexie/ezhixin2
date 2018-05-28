@@ -5,7 +5,7 @@
     background-size: cover;
 }
 .news{
-    padding: 74px 0 115px 0;
+    padding: 14px 0 115px 0;
 }
 .data{
     overflow: hidden;
@@ -16,9 +16,9 @@
     height: 20px;
     background-color: #333;
     float: left;
+    margin-right: 14px;
 }
 .data>span{
-    margin-left: 14px;
     color: #333333;
     font-weight: 600;
 }
@@ -27,9 +27,10 @@
 }
 .news_box{
     overflow: hidden;
-    box-shadow: 0 0 15px #dfe1ea;
+    /* box-shadow: 0 0 15px #dfe1ea; */
+    box-shadow: 0 0 15px red;
     border-radius: 5px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .news_l{
     float: left;
@@ -49,6 +50,9 @@
 .news_content{
     font-size: 14px;
     color: #666666;
+}
+.news_content ul li{
+    margin-top: 60px;
 }
 .news_more{
     font-size: 14px;
