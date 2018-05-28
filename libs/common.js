@@ -25,6 +25,16 @@ $(function(){
     $('.header_m ul li:nth-child(6) span').click(function(){
         window.location.href = './download.html'
     })
+    //鼠标滑动显示active状态
+    $('.header_m li').mouseover(function(){
+        $(this).addClass('active');
+        $(this).children('p').next().removeClass('header_display');
+    })
+    $('.header_m li').mouseleave(function(){
+        $(this).removeClass('active');
+        $(this).children('p').next().addClass('header_display');
+    })
+    
 })
 
 
@@ -61,12 +71,3 @@ function change(){
         }
     })
 
-    //鼠标滑动显示active状态
-    $('.header_m li').mouseover(function(){
-        $(this).addClass('active');
-        $(this).children('p').next().removeClass('header_display');
-    })
-    $('.header_m li').mouseleave(function(){
-        $(this).removeClass('active');
-        $(this).children('p').next().addClass('header_display');
-    })
