@@ -32,11 +32,12 @@ else if (/(Android)/i.test(navigator.userAgent)) {
 
 //默认新闻渲染
 var startIndex = 0;
+var pageLimit = 5;
 $.ajax({
     type: 'post',
     url: 'https://api.funinhr.com/api/news/getList',
     dataType: 'json',
-    data: { pageStart: startIndex },
+    data: { pageStart:startIndex,pageLimit:pageLimit},
     success: function (data) {
         startIndex = startIndex + 5;
         $('.news').attr('index', startIndex);
