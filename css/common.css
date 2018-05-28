@@ -112,7 +112,7 @@ header{
     line-height: 0;
     margin-top: 36px;
 }
-.header_m li>p>span{
+.header_m li{
     cursor: pointer;
 }
 .header_m li>div{
