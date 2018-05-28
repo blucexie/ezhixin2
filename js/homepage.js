@@ -107,6 +107,7 @@ $(function () {
                 var time = v.time;
                 var description = v.description;
                 var title = v.title;
+                var newsUrl = v.newsUrl;    
                 var descriptionLength = description.length;
                 var titleLength = title.length;
                 if (titleLength>26) {
@@ -116,7 +117,7 @@ $(function () {
                     description = description.substring(0, 20) + '...';
                 }
                 var content =
-                        '<li cid="'+cid+'">'+
+                        '<li cid="'+cid+'" newsUrl="'+newsUrl+'">'+
                             '<p class="newsTitle">'+title+'</p>'+
                             '<p>'+time+'<span>'+description+'</span>'+'</p>'+
                         '</li>'
@@ -127,8 +128,8 @@ $(function () {
     })
 
     $('.news_r').on('click','.newsTitle',function(){
-        var cid = $(this).parent().attr('cid');
-        window.location.href = 'https://api.funinhr.com/api/news/viewNews?cid='+cid;
+        var newsUrl = $(this).parent().attr('newsUrl');
+        window.location.href = newsUrl;
     })
 
 

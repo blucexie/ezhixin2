@@ -12,7 +12,7 @@
     padding-bottom: 25px;
 }
 .FAQ_border{
-    border-top: 1px solid #bbb;
+    border-top: 1px dashed #a9a9a9;
 }
 .FAQ li{
     box-shadow: 0 0 14px #eaecf4;

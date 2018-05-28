@@ -55,32 +55,68 @@
                 </div>
                 <ul class="clearfix">
                     <li>
-                        <img src="image/serviceCenter/a1.svg" alt="">
-                        <p>身份信息核验</p>
+                        <div class="front">
+                                <img src="image/serviceCenter/a1.svg" alt="">
+                                <p>身份信息核验</p>
+                        </div>
+                        <div class="back display">
+                                根据中国大陆身份证进行确认。
+                        </div>
+                        
                     </li>
                     <li>
-                        <img src="image/serviceCenter/a2.svg" alt="">
-                        <p>教育背景核验</p>
+                        <div class="front">
+                            <img src="image/serviceCenter/a2.svg" alt="">
+                            <p>教育背景核验</p>
+                        </div>
+                       <div class="back display">
+                            只能核查2001年后中国大陆大专及以上学历。
+                       </div>
                     </li>
                     <li>
-                        <img src="image/serviceCenter/a3.svg" alt="">
-                        <p>薪资预测</p>
+                        <div class="front">
+                                <img src="image/serviceCenter/a3.svg" alt="">
+                                <p>薪资预测</p>
+                        </div>
+                        <div class="back display">
+                                候选人近一年平均工资
+                        </div>
                     </li>
                     <li>
-                        <img src="image/serviceCenter/a4.svg" alt="">
-                        <p>工作经历核验</p>
+                        <div class="front">
+                                <img src="image/serviceCenter/a4.svg" alt="">
+                                <p>工作经历核验</p>
+                        </div>
+                         <div class="back display">
+                                根据大数据核查近3份工作经历
+                         </div>   
                     </li>
                     <li>
-                        <img src="image/serviceCenter/a5.svg" alt="">
-                        <p>同事证明核验</p>
+                        <div class="front">
+                                <img src="image/serviceCenter/a5.svg" alt="">
+                                <p>同事证明核验</p>
+                        </div>
+                       <div class="back display">
+                            根据大数据核查近3份工作经历
+                       </div>
                     </li>
                     <li>
-                        <img src="image/serviceCenter/a6.svg" alt="">
-                        <p>职业资格核验</p>
+                        <div class="front">
+                                <img src="image/serviceCenter/a6.svg" alt="">
+                                <p>职业资格核验</p>
+                        </div>
+                       <div class="back display">
+                            根据身份证进行查询
+                       </div>
                     </li>
                     <li>
-                        <img src="image/serviceCenter/a7.svg" alt="">
-                        <p>公共治安信息核验</p>
+                        <div class="front">
+                                <img src="image/serviceCenter/a7.svg" alt="">
+                                <p>公共治安信息核验</p>
+                        </div>
+                       <div class="back display">
+                            根据身份证进行查询
+                       </div>
                     </li>
                 </ul>   
             </div>
@@ -195,7 +231,9 @@
                                     </ul>
                                 </div>
                                 <div class="startBtn">
-                                    <button>开始背调</button>
+                                        <a href="http://hr.ezhixin.com/login" target="_blank">
+                                            <button>开始背调</button>
+                                        </a>
                                 </div>
                     </div>
                     
@@ -248,5 +286,16 @@
                 <img  src="image/kf.png" alt="在线咨询"  />
             </a>
         </div>
+        <script>
+            $('.productIntroduction ul li').mouseover(function(){
+                $(this).children('.front').css({'display':'none'});
+                $(this).children('.back').removeClass('display');
+            })
+            $('.productIntroduction ul li').mouseleave(function(){
+                $(this).children('.front').css({'display':'block'});
+                $(this).children('.back').addClass('display');
+            })
+        </script>
 </body>
+
 </html>
