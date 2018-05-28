@@ -3,8 +3,7 @@ var startIndex = 0;
 var pageLimit = 6;
 $.ajax({
     type: 'post',
-    // url: 'https://apix.funinhr.com/api/news/getList',
-    url: 'http://192.168.1.153:8887/api/news/getList',
+    url: 'https://apix.funinhr.com/api/news/getList',
     dataType: 'json',
     data: { pageStart: startIndex,pageLimit:pageLimit },
     success: function (data) {
@@ -82,8 +81,7 @@ $('.check_btn').click(function () {
     var contentUl = '';
     $.ajax({
         type: 'post',
-        // url: 'https://apix.funinhr.com/api/news/getList',
-        url: 'http://192.168.1.153:8887/api/news/getList',
+        url: 'https://apix.funinhr.com/api/news/getList',
         dataType: 'json',
         data: { pageStart: startIndex, pageLimit: pageLimit },
         success: function (data) {

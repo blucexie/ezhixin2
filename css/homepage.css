@@ -693,6 +693,18 @@ video{
     left: 20px;
     bottom: -20px;
 }
+.base_one{
+    left: 10px !important;
+}
+.base_two{
+    left: 32px !important;
+}
+.base_three{
+    left: 12px !important;
+}
+.base_four{
+    left: 42px !important;
+}
 .back_service_t1{
     font-size: 16px;
     padding-top: 10px;
@@ -1047,7 +1059,7 @@ video{
 
 
 .sence_l{
-    width: 153px;
+    width: 154px;
     height: 90px;
     position: absolute;
     top: 0;
@@ -1058,7 +1070,7 @@ video{
     
 }
 .sence_r{
-    width: 153px;
+    width: 154px;
     height: 90px;
     position: absolute;
     top: 0;
