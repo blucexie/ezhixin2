@@ -1,16 +1,16 @@
 //默认新闻渲染
 var startIndex = 0;
-var pageLimit = 2;
+var pageLimit = 6;
 $.ajax({
     type: 'post',
     url: 'https://apix.funinhr.com/api/news/getList',
     dataType: 'json',
     data: { pageStart: startIndex,pageLimit:pageLimit },
     success: function (data) {
-        if(data.length<=1){
-            $(that).remove();
+        if(data.length<6){
+            $('.check_btn').remove();
         }
-        startIndex = startIndex + 2;
+        startIndex = startIndex + 6;
         $('.news_out').attr('index', startIndex);
         var contentList = '';
         $(data).each(function (i, v) {
@@ -69,7 +69,7 @@ $.ajax({
   
 })
 $('.news').on('click','.news_more',function(){
-    var cid = $(this).parent().parent().attr('cid');
+    var cid = $(this).parent().parent().parent().attr('cid');
     window.location.href = 'https://api.funinhr.com/api/news/viewNews?cid='+cid;
 })
 
@@ -83,10 +83,10 @@ $('.check_btn').click(function () {
         dataType: 'json',
         data: { pageStart: startIndex, pageLimit: pageLimit },
         success: function (data) {
-            if(data.length<=1){
+            if(data.length<=5){
                 $(that).remove();
             }
-            startIndex = startIndex + 2;
+            startIndex = startIndex + 6;
             $('.news_out').attr('index', startIndex);
             var contentList = '';
             $(data).each(function (i, v) {

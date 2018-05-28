@@ -207,7 +207,13 @@ $('.more').on('click','.more_content1',function(){
             var contentList = '';
             $(data).each(function (i, v) {
                 var time = v.time;
-                var timeMonth = time.substr(6, 1)
+                var a = Number(time.substr(5,1));
+                var timeMonth;
+                if(a<1){
+                   timeMonth = time.substr(6, 1)
+                }else{
+                   timeMonth = time.substr(5, 2)
+                }
                 var timeData = time.substr(8, 2)
                 var description = v.description;
                 var title = v.title;

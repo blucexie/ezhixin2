@@ -28,8 +28,7 @@
 }
 .news_box{
     overflow: hidden;
-    /* box-shadow: 0 0 15px #dfe1ea; */
-    box-shadow: 0 0 15px red;
+    box-shadow: 0 0 15px #dfe1ea;
     border-radius: 5px;
     margin-top: 50px;
 }
