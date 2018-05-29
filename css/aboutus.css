@@ -1,11 +1,9 @@
 .banner{
     min-width: 1100px;
-    height: 524px;
-    background: url(../image/aboutus/aboutus.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
+.banner img{
+    width: 100%;
+}
 /* 公共头部 */
 
 .common_title{

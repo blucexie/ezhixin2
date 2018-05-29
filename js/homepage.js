@@ -33,7 +33,7 @@ $(function () {
         }
         if(h>1700 && flagService){
             $('.common_service').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
-            $('.service_out').delay(500).fadeIn(4000);
+            $('.service_out').delay(500).fadeIn(3000);
             flagService = false;
         }
         if(h>2500 && flagFlow){
@@ -71,15 +71,20 @@ $(function () {
 
     //二、banner 部分轮播图
     var swiper = new Swiper('.swiper-container', {
-        autoplay: true,
+        autoplay: {
+            disableOnInteraction: false
+        },
         loop: true,
         speed: 1000,
         slidesPerView: 1,
+        loop:true,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         }
     });
+
+
     
     //六、背调服务翻转
 
@@ -140,6 +145,11 @@ $(function () {
     $('.news_r').on('click','.newsTitle',function(){
         var newsUrl = $(this).parent().attr('newsUrl');
         window.location.href = newsUrl;
+    })
+
+    //背调跳转
+    $('.back_service_b1').click(function(){
+        window.location.href = "http://hr.ezhixin.com/login"
     })
 
 });
