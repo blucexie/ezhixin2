@@ -3,7 +3,7 @@ var startIndex = 0;
 var pageLimit = 6;
 $.ajax({
     type: 'post',
-    url: 'https://apix.funinhr.com/api/news/getList',
+    url: 'https://api.funinhr.com/api/news/getList',
     dataType: 'json',
     data: { pageStart: startIndex,pageLimit:pageLimit },
     success: function (data) {
@@ -81,7 +81,7 @@ $('.check_btn').click(function () {
     var contentUl = '';
     $.ajax({
         type: 'post',
-        url: 'https://apix.funinhr.com/api/news/getList',
+        url: 'https://api.funinhr.com/api/news/getList',
         dataType: 'json',
         data: { pageStart: startIndex, pageLimit: pageLimit },
         success: function (data) {
