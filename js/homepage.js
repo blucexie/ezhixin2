@@ -1,6 +1,13 @@
 ﻿
 $(function () {
 
+    var userAgent = navigator.userAgent; 
+    alert(userAgent);
+     var isChrome = (userAgent.indexOf("Chrome") > -1 || userAgent.indexOf("Safari") > -1)&&userAgent.indexOf("Edge") == -1&&userAgent.indexOf("QQBrowser") == -1 ; 
+    if(isChrome){
+        $('video').remove();
+    }
+
     var flagTrouble = true;
     var flagIntro = true;
     var flagAdvantage = true;
@@ -110,7 +117,7 @@ $(function () {
     var pageLimit = 4;
     $.ajax({
         type: 'post',
-        url: 'https://apix.funinhr.com/api/news/getList',
+        url: 'https://api.funinhr.com/api/news/getList',
         dataType: 'json',
         data: { pageStart: startIndex,pageLimit:pageLimit },
         success: function (data) {
