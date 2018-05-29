@@ -1,28 +1,27 @@
-
+﻿
 $(function () {
-
-    
-    $('.intro_tontent ul li:eq(0)').click(function(){
-        alert(1);
-    })
+    var tur = true;
+    var tur7 = true;
+    var tur13 = true;
     function topShow(){
         var h = $(document).scrollTop();
-        $('.common_trouble').animate({left:[-1500,'easeInOutBack'],'opacity':1},900);
+        $('.common_trouble').animate({left:-1500,'opacity':1},900);
         if(h>100){
                 $('.trouble_out').animate({'left':-1500},500);
                 $('.trouble_within').animate({'top':169,'opacity':1},800);
         }
-        if(h>700){
+        if(h>700 && tur7){
             $('.common_intro').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.intro_tontent ul li:eq(0)').delay(200).animate({'top':0,'opacity':1},900);
             $('.intro_tontent ul li:eq(1)').delay(400).animate({'top':0,'opacity':1},900);
             $('.intro_tontent ul li:eq(2)').delay(600).animate({'top':0,'opacity':1},900);
             $('.intro_tontent ul li:eq(3)').delay(800).animate({'top':0,'opacity':1},900);
-      
+            tur7 =false;
         }
-        if(h>1300){
+        if(h>1300 && tur13){
             $('.common_advantage').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.advantage_out').animate({'left':-1500},500);
+            tur13 = false;
         }
         if(h>1700){
             $('.common_service').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
@@ -49,8 +48,9 @@ $(function () {
     }
      
     //百叶窗
+    topShow();   
     $(window).scroll(function () {
-        topShow();   
+        topShow();  
     })
 
         
