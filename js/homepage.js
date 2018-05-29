@@ -1,49 +1,61 @@
 ﻿
 $(function () {
-    var tur = true;
-    var tur7 = true;
-    var tur13 = true;
+
+    var flagTrouble = true;
+    var flagIntro = true;
+    var flagAdvantage = true;
+    var flagService = true;
+    var flagFlow = true;
+    var flagSence = true;
+    var flagPartner = true;
+    var flagNews = true;
+
     function topShow(){
         var h = $(document).scrollTop();
-        $('.common_trouble').animate({left:-1500,'opacity':1},900);
-        if(h>100){
-                $('.trouble_out').animate({'left':-1500},500);
-                $('.trouble_within').animate({'top':169,'opacity':1},800);
+        if(h>100 && flagTrouble){          
+            $('.common_trouble').animate({left:[-1500,'easeInOutBack'],'opacity':1},900);
+            $('.trouble_out').animate({'left':-1500},500);
+            $('.trouble_within').animate({'top':169,'opacity':1},800);
+            flagTrouble = false;
         }
-        if(h>700 && tur7){
+        if(h>700 && flagIntro){         
             $('.common_intro').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.intro_tontent ul li:eq(0)').delay(200).animate({'top':0,'opacity':1},900);
             $('.intro_tontent ul li:eq(1)').delay(400).animate({'top':0,'opacity':1},900);
             $('.intro_tontent ul li:eq(2)').delay(600).animate({'top':0,'opacity':1},900);
             $('.intro_tontent ul li:eq(3)').delay(800).animate({'top':0,'opacity':1},900);
-            tur7 =false;
+            flagIntro = false;
         }
-        if(h>1300 && tur13){
+        if(h>1300 && flagAdvantage){
             $('.common_advantage').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.advantage_out').animate({'left':-1500},500);
-            tur13 = false;
+            flagAdvantage = false;
         }
-        if(h>1700){
+        if(h>1700 && flagService){
             $('.common_service').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.service_out').delay(500).fadeIn(4000);
+            flagService = false;
         }
-        if(h>2500){
+        if(h>2500 && flagFlow){
             $('.common_flow').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.flow_intro').animate({'right':-1500},700);
             $('.flow_out').animate({'left':-1500},500);
+            flagFlow = false;
         }
-        if(h>3000){
+        if(h>3000 && flagSence){
             $('.common_sence').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.sence_out').animate({'left':-1500},700);
-           
+            flagSence = false;
         }
-        if(h>3600){
+        if(h>3600 && flagPartner){
             $('.common_partner').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.partner_out').animate({'left':-1500},700);
+            flagPartner = false;
         }
-        if(h>4200){
+        if(h>4200 && flagNews){
             $('.common_news').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
             $('.news_out').animate({'left':-1500},700);
+            flagNews = false;
         }
     }
      
