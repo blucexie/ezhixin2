@@ -1,26 +1,5 @@
 
-.fanzhuan1{
-    transform: rotateY(360deg) !important;
-    -moz-transform: rotateY(360deg) !important;
-    -ms-transform: rotateY(360deg) !important;
-    -o-transform: rotateY(360deg) !important;
-    -webkit-transform: rotateY(360deg) !important;
-}
-.fanzhuan2{
-	transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-	-o-transform: rotateY(180deg);
-	-ms-transform: rotateY(180deg);
-	-webkit-transform: rotateY(180deg);
-    transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    -o-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    -ms-transition: all 0.2s;
-}
-.fanzhuanmargin{
-    margin-left: 0 !important;
-}
+
 
 /* 一、公共头部 */
 .odd{
@@ -519,6 +498,33 @@ video{
 	-moz-transform: rotateY(180deg);
 	-o-transform: rotateY(180deg);
 	-webkit-transform: rotateY(180deg);
+}
+.fanzhuan1{
+    transform: rotateY(360deg) !important;
+    -moz-transform: rotateY(360deg) !important;
+    -ms-transform: rotateY(360deg) !important;
+    -o-transform: rotateY(360deg) !important;
+    -webkit-transform: rotateY(360deg) !important;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+.fanzhuan2{
+	transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+.fanzhuanmargin{
+    margin-left: 0 !important;
 }
 .back_service .back_service_box .back_service_content{
     height: 362px;
