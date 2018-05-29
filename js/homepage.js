@@ -62,7 +62,7 @@ $(function () {
     //百叶窗
     topShow();   
     $(window).scroll(function () {
-        topShow();   
+        topShow();  
     })
 
         
