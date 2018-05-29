@@ -16,6 +16,7 @@
     -moz-transition: all 0.2s;
     -o-transition: all 0.2s;
     -webkit-transition: all 0.2s;
+    -ms-transition: all 0.2s;
 }
 .fanzhuanmargin{
     margin-left: 0 !important;
@@ -505,10 +506,12 @@ video{
     -moz-backface-visibility: hidden !important;
     -ms-backface-visibility: hidden !important;
     -webkit-backface-visibility: hidden !important;
+    -o-backface-visibility: hidden !important;
     transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-o-transition: all 0.2s;
 	-webkit-transition: all 0.2s;
+	-ms-transition: all 0.2s;
 	background-position: -305px bottom;
 	transform: rotateY(180deg);
 	-ms-transform: rotateY(180deg);

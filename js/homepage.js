@@ -81,23 +81,24 @@ $(function () {
         }
     });
     
-    
     //六、背调服务翻转
+
     $('.back_service_content').mouseover(function(){
-        $(this).parent().addClass('fanzhuanmargin');
-        $(this).parent().removeClass('fanzhuan1').addClass('fanzhuan2');
-        $(this).parent().parent().siblings('li').children('.front').removeClass('fanzhuan2').addClass('fanzhuan1');
+        $(this).parent().addClass('fanzhuanmargin'); //front 
+        $(this).parent().removeClass('fanzhuan1').addClass('fanzhuan2'); //front
+        $(this).parent().next().addClass('fanzhuan1'); //back
+        $(this).parent().parent().siblings('li').children('.front').removeClass('fanzhuan2').addClass('fanzhuan1'); 
         $(this).parent().parent().siblings('li').children('.front').removeClass('fanzhuanmargin');
         $(this).parent().parent().siblings('li').children('.back').removeClass('fanzhuan1').addClass('fanzhuan2');
-        $(this).parent().next().addClass('fanzhuan1');
 	})
     $('.back_service_content1').mouseleave(function(){
-        $(this).parent().prev().removeClass('fanzhuanmargin');
-        $(this).parent().removeClass('fanzhuan1').addClass('fanzhuan2');
+        $(this).parent().prev().removeClass('fanzhuanmargin'); //front
+        // $(this).parent().removeClass('fanzhuan1').addClass('fanzhuan2'); //back
+        $(this).parent().removeClass('fanzhuan1'); //back
+        $(this).parent().prev().addClass('fanzhuan1').removeClass('fanzhuan2'); //front
         $(this).parent().parent().siblings('li').children('front').removeClass('fanzhuan2').addClass('fanzhuan1');
         $(this).parent().parent().siblings('li').children('front').addClass('fanzhuanmargin');
         $(this).parent().parent().siblings('li').children('back').removeClass('fanzhuan1').addClass('fanzhuan2');
-        $(this).parent().prev().addClass('fanzhuan1');
     })
 
     // 十、新闻咨询
@@ -142,7 +143,6 @@ $(function () {
         var newsUrl = $(this).parent().attr('newsUrl');
         window.location.href = newsUrl;
     })
-
 
 });
 
