@@ -2,7 +2,6 @@
 $(function () {
 
     var userAgent = navigator.userAgent; 
-    alert(userAgent);
      var isChrome = (userAgent.indexOf("Chrome") > -1 || userAgent.indexOf("Safari") > -1)&&userAgent.indexOf("Edge") == -1&&userAgent.indexOf("QQBrowser") == -1 ; 
     if(isChrome){
         $('video').remove();
