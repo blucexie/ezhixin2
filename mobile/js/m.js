@@ -45,7 +45,13 @@ $.ajax({
         $(data).each(function (i, v) {
             var cid = v.cid;
             var time = v.time;
-            var timeMonth = time.substr(6, 1)
+            var a = Number(time.substr(5, 1));
+            var timeMonth;
+            if (a < 1) {
+                timeMonth = time.substr(6, 1)
+            } else {
+                timeMonth = time.substr(5, 2)
+            }
             var timeData = time.substr(8, 2)
             var description = v.description;
             var title = v.title;
@@ -132,7 +138,7 @@ $('.toTop').click(function () {
     $("html,body").animate({ scrollTop: 0 }, 500);
 })
 
-//查看更多(待完善)
+//查看更多
 
 $('.more_content').click(function () {
     var index = Number($('.news').attr('index'));
@@ -140,7 +146,7 @@ $('.more_content').click(function () {
         type: 'post',
         url: 'https://api.funinhr.com/api/news/getList',
         dataType: 'json',
-        data: { pageStart: index },
+        data: { pageStart: index,pageLimit:pageLimit},
         success: function (data) {
             if(data.length<5){
                 $('.more_content').hide();
@@ -156,7 +162,13 @@ $('.more_content').click(function () {
             $(data).each(function (i, v) {
                 var cid = v.cid;
                 var time = v.time;
-                var timeMonth = time.substr(6, 1)
+                var a = Number(time.substr(5, 1));
+                var timeMonth;
+                if (a < 1) {
+                    timeMonth = time.substr(6, 1)
+                } else {
+                    timeMonth = time.substr(5, 2)
+                }
                 var timeData = time.substr(8, 2)
                 var description = v.description;
                 var title = v.title;
@@ -198,10 +210,9 @@ $('.more').on('click','.more_content1',function(){
     $('.news').attr('index',returnIndex);
     $.ajax({
         type: 'post',
-        url:'http://192.168.1.153:8887/api/news/getList',
-        // url: 'https://api.funinhr.com/api/news/getList',
+        url: 'https://api.funinhr.com/api/news/getList',
         dataType: 'json',
-        data: { pageStart: returnIndex },
+        data: { pageStart: returnIndex,pageLimit:pageLimit },
         success: function (data) {
             returnIndex = returnIndex + 5;
             $('.news').attr('index',returnIndex);
@@ -212,7 +223,13 @@ $('.more').on('click','.more_content1',function(){
             $(data).each(function (i, v) {
                 var cid = v.cid;
                 var time = v.time;
-                var timeMonth = time.substr(6, 1)
+                var a = Number(time.substr(5, 1));
+                var timeMonth;
+                if (a < 1) {
+                    timeMonth = time.substr(6, 1)
+                } else {
+                    timeMonth = time.substr(5, 2)
+                }
                 var timeData = time.substr(8, 2)
                 var description = v.description;
                 var title = v.title;

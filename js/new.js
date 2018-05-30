@@ -90,12 +90,12 @@ $('.check_btn').click(function () {
             var contentList = '';
             $(data).each(function (i, v) {
                 var cid = v.cid;
-                var time = v.time;
-                var a = Number(time.substr(5, 1));
                 var hasMore = v.hasMore;
                 if(hasMore==false){
                     $('.check_btn').remove();
                 }
+                var time = v.time;
+                var a = Number(time.substr(5, 1));
                 var timeMonth;
                 if (a < 1) {
                     timeMonth = time.substr(6, 1)
