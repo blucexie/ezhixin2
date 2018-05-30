@@ -28,6 +28,7 @@ main{
 .right-title>img{
     float: left;
     width: 140px;
+    height: 140px;
     margin-right: 42px;
 }
 .right-title>div{
@@ -59,6 +60,7 @@ main{
 }
 .android>img,.ios>img{
     width: 40px;
+    height: 40px;
     margin-right: 20px;
 }
 .ios{

@@ -39,7 +39,7 @@ $(function () {
         }
         if(h>1700 && flagService){
             $('.common_service').animate({'left':[-1500,'easeInOutBack'],'opacity':1},900);
-            $('.service_out').delay(500).fadeIn(3000);
+            $('.service_out').delay(500).fadeIn(1000);
             flagService = false;
         }
         if(h>2500 && flagFlow){
@@ -75,7 +75,7 @@ $(function () {
 
    
 
-    //二、banner 部分轮播图
+    // 二、banner 部分轮播图
     var swiper = new Swiper('.swiper-container', {
         autoplay: {
             disableOnInteraction: false
