@@ -57,6 +57,7 @@ $.ajax({
             var title = v.title;
             var descriptionLength = description.length;
             var titleLength = title.length;
+            var newsUrl = v.newsUrl;
             if (titleLength>20) {
                 title = title.substring(0,20) + '...';
             }
@@ -66,7 +67,7 @@ $.ajax({
                 description = '<span>' + '点击全文》' + '</span>';
             }
             var content =
-                '<li cid="'+cid+'">'
+                '<li cid="'+newsUrl+'">'
                 + '<div class="news_l">'
                 + '<div>'
                 + timeData
@@ -182,8 +183,9 @@ $('.more_content').click(function () {
                 }else{
                     description = '<span>' + '点击全文》' + '</span>';
                 }
+                var newsUrl = v.newsUrl;
                 var content =
-                    '<li cid="'+cid+'">'
+                    '<li cid="'+newsUrl+'">'
                     + '<div class="news_l">'
                     + '<div>'
                     + timeData
@@ -243,8 +245,9 @@ $('.more').on('click','.more_content1',function(){
                 }else{
                     description = '<span>' + '点击全文》' + '</span>';
                 }
+                var newsUrl = v.newsUrl;
                 var content =
-                    '<li cid="'+cid+'">'
+                    '<li cid="'+newsUrl+'">'
                     + '<div class="news_l">'
                     + '<div>'
                     + timeData
@@ -266,5 +269,5 @@ $('.more').on('click','.more_content1',function(){
 
 $('.news').on('click','.news_content span',function(){
     var cid = $(this).parent().parent().parent().attr('cid');
-    window.location.href = 'https://api.funinhr.com/api/news/viewNews?cid='+cid;
+    window.location.href = cid;
 })
