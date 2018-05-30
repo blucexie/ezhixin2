@@ -114,6 +114,7 @@ $('.check_btn').click(function () {
                 var descriptionLength = description.length;
                 var titleLength = title.length;
                 var imgUrl = v.imgUrl;
+                var newsUrl = v.newsUrl;
                 if (titleLength > 60) {
                     title = title.substring(0, 60) + '...';
                 }
@@ -121,7 +122,7 @@ $('.check_btn').click(function () {
                     description = description.substring(0, 200) + '...';
                 }
                 var content =
-                    '<li cid="' + cid + '">' +
+                    '<li cid="' + cid + '" newsUrl="'+newsUrl+'" >' +
                     '<div class="data">' +
                     '<div class="data_l">' + '</div>' +
                     '<span>' + timeMonth + '</span>' + '<span>' + '月' + '</span>' + '<span>' + timeData + '</span>' + '<span>' + '日' + '</span>' +
