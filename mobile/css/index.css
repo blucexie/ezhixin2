@@ -76,7 +76,7 @@ body {
 .header {
   padding-top: 0.1px;
   height: 8.16rem;
-  background: url(../img/header-bg.png) no-repeat;
+  background: url(http://cdn.funinhr.com/home/mobile/image/header-bg.png) no-repeat;
   background-size: 15rem 8.16rem;
   position: relative;
 }
@@ -197,7 +197,7 @@ body {
 .course{
   margin: 0 1.2rem;
   height: 36.82rem;
-  background-image: url(../img/course.png); background-repeat:no-repeat; background-position:center;
+  background-image: url(http://cdn.funinhr.com/home/mobile/image/course.png); background-repeat:no-repeat; background-position:center;
   background-size: 10.08rem 36.82rem;
 }
 .course ul li{
@@ -319,15 +319,15 @@ body {
       height: 10.52rem;
 }
 .safe_one{
-  background-image: url(../img/message1.png); background-repeat:no-repeat;
+  background-image: url(http://cdn.funinhr.com/home/mobile/image/message1.png); background-repeat:no-repeat;
   background-position: 1.2rem 0;
 }
 .safe_two{
-  background-image: url(../img/message2.png); background-repeat:no-repeat;
+  background-image: url(http://cdn.funinhr.com/home/mobile/image/message2.png); background-repeat:no-repeat;
   background-position: 1.2rem 0;
 }
 .safe_three{
-  background-image: url(../img/message3.png); background-repeat:no-repeat;
+  background-image: url(http://cdn.funinhr.com/home/mobile/image/message3.png); background-repeat:no-repeat;
   background-position: 1.2rem 0;
 }
 .safe_content{

@@ -33,7 +33,6 @@ $(function(){
     $('.header_m li').mouseleave(function(){
         $(this).removeClass('active');
         $(this).children('p').next().addClass('header_display');
-
     })
     
 })

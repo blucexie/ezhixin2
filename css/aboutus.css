@@ -80,6 +80,7 @@
     margin: 0 22px;
     position: relative;
     cursor: pointer;
+    background-color: #fff;
     box-shadow: 0px 0px 24px #e1e5ee;
 } 
 .advantage_t{

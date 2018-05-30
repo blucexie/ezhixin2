@@ -32,11 +32,12 @@ else if (/(Android)/i.test(navigator.userAgent)) {
 
 //默认新闻渲染
 var startIndex = 0;
+var pageLimit = 5;
 $.ajax({
     type: 'post',
     url: 'https://api.funinhr.com/api/news/getList',
     dataType: 'json',
-    data: { pageStart: startIndex },
+    data: { pageStart: startIndex ,pageLimit:pageLimit},
     success: function (data) {
         startIndex = startIndex + 5;
         $('.news').attr('index', startIndex);
@@ -138,7 +139,7 @@ $('.more_content').click(function () {
         type: 'post',
         url: 'https://api.funinhr.com/api/news/getList',
         dataType: 'json',
-        data: { pageStart: index },
+        data: { pageStart: index ,pageLimit:pageLimit},
         success: function (data) {
             if(data.length<5){
                 $('.more_content').hide();
@@ -197,7 +198,7 @@ $('.more').on('click','.more_content1',function(){
         type: 'post',
         url: 'https://api.funinhr.com/api/news/getList',
         dataType: 'json',
-        data: { pageStart: returnIndex },
+        data: { pageStart: returnIndex,pageLimit:pageLimit},
         success: function (data) {
             returnIndex = returnIndex + 5;
             $('.news').attr('index',returnIndex);

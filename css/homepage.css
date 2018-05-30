@@ -64,14 +64,14 @@
 .one{
     height: 785px;
     width: 100%;
-    background-image: url(../image/banner1.png);
+    background-image: url(http://cdn.funinhr.com/home/image/banner1.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .two{
     height: 785px;
     width: 100%;
-    background-image: url(../image/banner2.png);
+    background-image: url(http://cdn.funinhr.com/home/image/banner2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -93,6 +93,9 @@
     border-radius: 10px;
     cursor: pointer;
 }
+.consult1{
+    margin-top: 570px !important;
+}
 .consult>a{
     text-decoration: none;
     color: #ffffff;
@@ -113,7 +116,7 @@
     position: absolute;
     right: 0;
     top: 250px;
-    z-index: 9999   ;
+    z-index: 9999;
 }
 video{
     width: 100%;
@@ -122,6 +125,11 @@ video{
     float: left;
     width: 360px;
     margin-top: 230px;
+}
+.banner_content1{
+    float: left;
+    width: 360px;
+    margin-top: 260px;
 }
 .banner_content>img{
     width: 100%;
@@ -314,7 +322,7 @@ video{
 .intro{
     width: 100%;
     height: 570px;
-    background-image: url(../image/intro.png);
+    background-image: url(http://cdn.funinhr.com/home/image/intro.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -464,7 +472,7 @@ video{
 .service{
     width: 100%;
     height: 686px;
-    background-image: url(../image/service.png);
+    background-image: url(http://cdn.funinhr.com/home/image/service.png);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -874,7 +882,7 @@ video{
 .sence{
     width: 100%;
     height: 694px;
-    background-image: url(../image/sence.png);
+    background-image: url(http://cdn.funinhr.com/home/image/sence.png);
     background-size: cover;
     position: relative;
     overflow: hidden;
@@ -915,9 +923,6 @@ video{
     position: relative;
     overflow: hidden;
 }
-.sence_inside1:hover{
-    color:#00adb4;
-}
 .sence_inside1:hover .sence_l{
     animation: senceInl1 0.2s linear forwards;
 }
@@ -941,10 +946,6 @@ video{
         transform: translateX(-153px);
         opacity: 1;
     }
-}
-
-.sence_inside2:hover{
-    color:#00adb4;
 }
 .sence_inside2:hover .sence_l{
     animation: senceInl2 0.2s linear forwards;
@@ -970,10 +971,6 @@ video{
         opacity: 1;
     }
 }
-
-.sence_inside3:hover{
-    color:#00adb4;
-}
 .sence_inside3:hover .sence_l{
     animation: senceInl3 0.2s linear forwards;
 }
@@ -997,9 +994,6 @@ video{
         transform: translateX(-153px);
         opacity: 1;
     }
-}
-.sence_inside4:hover{
-    color:#00adb4;
 }
 .sence_inside4:hover .sence_l{
     animation: senceInl4 0.2s linear forwards;
@@ -1025,10 +1019,6 @@ video{
         opacity: 1;
     }
 }
-
-.sence_inside5:hover{
-    color:#00adb4;
-}
 .sence_inside5:hover .sence_l{
     animation: senceInl5 0.2s linear forwards;
 }
@@ -1052,10 +1042,6 @@ video{
         transform: translateX(-153px);
         opacity: 1;
     }
-}
-
-.sence_inside6:hover{
-    color:#00adb4;
 }
 .sence_inside6:hover .sence_l{
     animation: senceInl6 0.2s linear forwards;
@@ -1081,9 +1067,6 @@ video{
         opacity: 1;
     }
 }
-
-
-
 .sence_l{
     width: 154px;
     height: 90px;
@@ -1091,9 +1074,8 @@ video{
     top: 0;
     left: -153px;
     border-radius: 5px 0 0 5px;
-    background-color: #ffffff;
+    background-color: #00adb4;
     opacity: 0;
-    
 }
 .sence_r{
     width: 154px;
@@ -1102,7 +1084,7 @@ video{
     top: 0;
     right: -153px;
     border-radius:0 5px 5px 0;
-    background-color: #ffffff;
+    background-color: #00adb4;
     opacity: 0;
 }
 .sence_cont{
@@ -1285,7 +1267,7 @@ video{
 .news{
     min-width: 1100px;
     height: 564px;
-    background-image: url(../image/news.png);
+    background-image: url(http://cdn.funinhr.com/home/image/news.png);
     background-size: cover;
     position: relative;
     overflow: hidden;
