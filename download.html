@@ -10,6 +10,19 @@
     <script src="libs/jquery-3.2.1.min.js"></script>
     <script src="libs/common.js"></script>
     <title>易职信</title>
+    <script>
+            /*获取ch*/
+            function GetQueryString(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]);
+                return null;
+            }
+            var ch = GetQueryString("ch");
+            if(ch!=null && typeof(ch) != "undefined" && ch != ""){
+                document.cookie = "ch=" + ch + ";domain=.ezhixin.com;path=/";
+            }
+       </script>
 </head>
 <body>
      <!-- 一、header部分 -->
@@ -126,5 +139,6 @@
             <img  src="image/kf.png" alt="在线咨询"  />
         </a>
     </div>
+	<script src="https://s19.cnzz.com/z_stat.php?id=1272625027&web_id=1272625027" language="JavaScript" type="hidden"></script>
 </body>
 </html>
