@@ -22,7 +22,14 @@
             if(ch!=null && typeof(ch) != "undefined" && ch != ""){
                 document.cookie = "ch=" + ch + ";domain=.ezhixin.com;path=/";
             }
-       </script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?ce696c88e21f3ace529cee2c209d184b";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+    </script>
 </head>
 <body>
      <!-- 一、header部分 -->
@@ -291,7 +298,7 @@
         </div>
         <div class="line"></div>
         <div class="bottom">
-            @Copright 2016 北京风影职信科技有限公司 京ICP备17026155号-2<script src="https://s19.cnzz.com/z_stat.php?id=1272625027&web_id=1272625027" language="JavaScript"></script>
+            @Copright 2016 北京风影职信科技有限公司 京ICP备17026155号-2
         </div>
     </footer>
      <!-- 客服 -->
