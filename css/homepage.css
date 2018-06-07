@@ -1384,7 +1384,7 @@ video{
     text-align: center;
     position: fixed;
     z-index: 100;
-    top: 28%;
+    top: 26%;
     display: none;
 }
 .limit{
@@ -1455,8 +1455,8 @@ video{
 }
 
 .word{
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     position: fixed;
     right: 2%;
     top: 28%;
@@ -1464,8 +1464,8 @@ video{
     z-index: 1000;
 }
 .word>img{
-    width:160px;
-    height: 160px;
+    width:200px;
+    height: 200px;
 }
 
 
