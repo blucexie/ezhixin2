@@ -170,9 +170,6 @@ $(function () {
     $('.btn_download').click(function(){
         window.location.href = './download.html'
     })
-
-
-
 });
 
 
