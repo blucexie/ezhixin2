@@ -1378,6 +1378,97 @@ video{
     margin-bottom: 0;
 }
 
+/* 十一、限时活动 */
+.limit_out{
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    bottom: 39%;
+    display: none;
+}
+.limit{
+    height: 265px;
+    background-image: url(../image/limit.svg);
+    background-size: cover;
+    display: inline-block;
+    overflow: hidden;
+}
+.limit_r{
+    float: right;
+    margin-right: 150px;
+    margin-top: 20px;
+    text-align: left;
+    position: relative;
+}
+.closed{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: -80px;
+    cursor: pointer;
+}
+.limit_intro{
+    width: 108px;
+    height: 24px;
+    background-image: url(../image/limit_intro.svg);
+    background-size: cover;
+    margin-top: 30px;
+}
+.limit p{
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
+.limit p:nth-child(2){
+    margin-top: 16px;
+}
+.limit p:nth-child(3){
+    margin-top: 10px;
+}
+.limit p span{
+    display: inline-block;
+    color: #fe4646;
+    background-color: #faec4d;
+    background-size: 14px 100%;
+}
+.limit_btns{
+    margin-top: 29px;
+}
+.limit_btn{
+    width: 145px;
+    height: 38px;
+    background-image: url(../image/limit_btn.png);
+    background-size: 145px 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+    float: left;
+    cursor: pointer;
+}
+.limit_btn:nth-child(1){
+    margin-left: 84px;
+}
+.limit_btn:nth-child(2){
+    margin-left: 68px;
+}
+
+.word{
+    width: 160px;
+    height: 160px;
+    position: fixed;
+    right: 2%;
+    top: 28%;
+    cursor: pointer;
+    z-index: 1000;
+}
+.word>img{
+    width:160px;
+    height: 160px;
+}
+
+
 
 
 

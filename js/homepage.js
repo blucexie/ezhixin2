@@ -158,6 +158,22 @@ $(function () {
         window.location.href = "http://hr.ezhixin.com/login"
     })
 
+    //限时活动
+    $('.word').click(function(){
+        $('.limit_out').fadeIn(800);
+    })
+    $('.closed').click(function(){
+        $('.limit_out').fadeOut(500);
+    })
+    $('.btn_login').click(function(){
+        window.location.href ="http://hr.ezhixin.com/login";
+    })
+    $('.btn_download').click(function(){
+        window.location.href = './download.html'
+    })
+
+
+
 });
 
 
