@@ -123,7 +123,7 @@ header{
     width: 28px;
 }
 .header_r{
-    width: 10%;
+    width: 12%;
     height: 75px;
     float: right;
 }
@@ -142,7 +142,7 @@ header{
     display: none;
 }
 .header_r .login{
-    width: 98px;
+    width: 126px;
     height: 33px;
     line-height: 33px;
     margin-top: 20px;
