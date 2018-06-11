@@ -69,6 +69,7 @@ $(function () {
     topShow();   
     $(window).scroll(function () {
         topShow();  
+        $('.limit_out').show();
     })
 
         

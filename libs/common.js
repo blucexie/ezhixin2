@@ -1,9 +1,9 @@
 $(function(){
     /* 登录注册 */
-    $('.login span:nth-child(1)').click(function(){
+    $('.login_log').click(function(){
         window.location.href ="http://hr.ezhixin.com/login";
     })
-    $('.login span:nth-child(3)').click(function(){
+    $('.login_test').click(function(){
         window.location.href ="http://hr.ezhixin.com/login";
     })
 
@@ -43,13 +43,13 @@ function change(){
     $('header').addClass('header_active');
     $('.header_m ul li').addClass('headerContent_active');
     $('.header_phone span').addClass('headerContent_active');
-    $('.login a').addClass('login_active');
-    $('.login span').addClass('login_active');
-    $('.login').addClass('loginBorder_active');
+    $('.login_log span').addClass('login_active');
+    $('.login_log').addClass('loginBorder_active');
     $('.logo1').hide();
     $('.logo').show();
     $('.headerphone').hide();
     $('.headerphone1').show();
+    $('.lim')
 }
  //一、header部分
     //滚动状态改变 悬浮置顶
@@ -61,9 +61,8 @@ function change(){
             $('header').removeClass("header_active");
             $('.header_m ul li').removeClass('headerContent_active');
             $('.header_phone span').removeClass('headerContent_active');
-            $('.login a').removeClass('login_active');
-            $('.login span').removeClass('login_active');
-            $('.login').removeClass('loginBorder_active');
+            $('.login_log span').removeClass('login_active');
+            $('.login_log').removeClass('loginBorder_active');
             $('.logo').hide();
             $('.logo1').show();
             $('.headerphone1').hide();
