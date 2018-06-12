@@ -178,7 +178,7 @@ header{
 /*十一、footer部分 */
 footer{
     width: 100%;
-    height: 300px;
+    height: 378px;
     background-color: #293647;
     min-width: 1100px;
 }
@@ -226,6 +226,20 @@ footer{
     width: 95px;
     height: 95px;
 }
+.ewm_load{
+    height: 95px !important;
+    width: 95px !important;
+}
+.ewm_load:hover{
+    animation: load 0.2s  ease-in-out forwards;
+}
+@keyframes load{
+    0%{
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
 .ewm>div>img:hover{
     animation: ewm 0.2s  ease-in-out forwards;
 }
@@ -267,7 +281,7 @@ footer{
     height: 110px;
     position: fixed;
     right: 2%;
-    top: 60%;
+    top: 40%;
     z-index: 1000;
 }
 .phone>a>img{
