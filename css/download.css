@@ -1,7 +1,7 @@
 
 main{
     width: 100%;
-    background: url('../image/downloadbg.jpg')no-repeat;
+    background: url('http://cdn.funinhr.com/home/image/downloadbg.jpg')no-repeat;
     background-size: cover;
     padding-top: 0.1px;
     padding-bottom: 0.1px;
