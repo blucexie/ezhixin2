@@ -34,6 +34,11 @@ $(function(){
         $(this).removeClass('active');
         $(this).children('p').next().addClass('header_display');
     })
+
+    // 点击logo回到首页
+    $('.header_l').click(function(){
+        window.location.href = './index.html'
+    })
     
 })
 

@@ -18,7 +18,7 @@ $(function () {
 
     function topShow(){
         var h = $(document).scrollTop();
-        if(h>100 && flagTrouble){          
+        if(h>=0 && flagTrouble){          
             $('.common_trouble').animate({left:[-1500,'easeInOutBack'],'opacity':1},900);
             $('.trouble_out').animate({'left':-1500},500);
             $('.trouble_within').animate({'top':169,'opacity':1},800);
@@ -69,7 +69,6 @@ $(function () {
     topShow();   
     $(window).scroll(function () {
         topShow();  
-        $('.limit_out').show();
     })
 
         

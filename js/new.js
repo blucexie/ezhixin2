@@ -90,6 +90,7 @@ $('.check_btn').click(function () {
             var contentList = '';
             $(data).each(function (i, v) {
                 var cid = v.cid;
+                var newsUrl = v.newsUrl;
                 var hasMore = v.hasMore;
                 if(hasMore==false){
                     $('.check_btn').remove();
@@ -121,7 +122,7 @@ $('.check_btn').click(function () {
                     description = description.substring(0, 200) + '...';
                 }
                 var content =
-                    '<li cid="' + cid + '">' +
+                    '<li cid="' + cid + '" newsUrl="'+newsUrl+'">' +
                     '<div class="data">' +
                     '<div class="data_l">' + '</div>' +
                     '<span>' + timeMonth + '</span>' + '<span>' + '月' + '</span>' + '<span>' + timeData + '</span>' + '<span>' + '日' + '</span>' +

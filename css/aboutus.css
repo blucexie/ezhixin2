@@ -31,8 +31,7 @@
 
 /* 公司介绍 */
 .intro{
-    margin-top: 44px;
-    height: 300px;
+    overflow: hidden;
     margin-bottom: 60px;
 }
 .intro_l{
@@ -42,6 +41,7 @@
 .intro_l>img{
     width: 380px;
     height: 300px;
+    margin-top: 40px;
 }
 .intro_r{
     width: 666px;
@@ -52,7 +52,7 @@
 }
 .intro_r p{
     text-indent: 28px;
-    line-height: 32px;
+    line-height: 28px;
 }
 
 
