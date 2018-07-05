@@ -600,7 +600,7 @@ video{
     margin-left: 0 !important;
 }
 .back_service .back_service_box .back_service_content{
-    height: 362px;
+    height: 340px;
     width: 180px;
     padding: 0 20px;
     position: relative;
@@ -701,7 +701,7 @@ video{
     text-align: center;
     position: absolute;
     left: 52px;
-    bottom: 30px;
+    bottom: 15px;
 }
 .back_service_bt{
     margin-top: 132px !important;
@@ -1431,8 +1431,13 @@ video{
     position: fixed;
     z-index: 100;
     bottom: -4px;
-    background-image: url(../limit_img/limit.svg);
-    background-size: cover;
+}
+.limit_bg{
+    width: 100%;
+    height: 86px;
+    position: fixed;
+    z-index: 10;
+    bottom: -4px;
 }
 .limit{
     height: 158px;
@@ -1451,6 +1456,7 @@ video{
 .limit_l>img{
    width: 100%;
    height: 100%;
+   cursor: pointer;
 }
 .first_free{
     width: 263px;

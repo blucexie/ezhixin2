@@ -160,10 +160,18 @@ $(function () {
     })
 
     $('.word').click(function(){
-        $('.limit_out').toggle();
+        $('.limit_bg').fadeIn(500);
+        $('.first_free').fadeIn(500);
+        $('.limit_m').fadeIn(500);
+        $('.limit_btns').fadeIn(500);
+        $('.limit_r').fadeIn(500);
     })
     $('.closed').click(function(){
-        $('.limit_out').fadeOut(500);
+        $('.limit_bg').fadeOut(500);
+        $('.first_free').fadeOut(500);
+        $('.limit_m').fadeOut(500);
+        $('.limit_btns').fadeOut(500);
+        $('.limit_r').fadeOut(500);
     })
     $('.btn_login').click(function(){
         window.location.href ="http://hr.ezhixin.com/login";
