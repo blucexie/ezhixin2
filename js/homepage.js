@@ -82,6 +82,7 @@ $(function () {
         },
         loop: true,
         speed: 1000,
+        delay:4000,
         slidesPerView: 1,
         loop:true,
         pagination: {

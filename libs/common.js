@@ -6,7 +6,9 @@ $(function(){
     $('.login_test').click(function(){
         window.location.href ="http://hr.ezhixin.com/login";
     })
-
+    $('.btn1').click(function(){
+        window.location.href ="http://hr.ezhixin.com/login";
+    })
     $('.header_m ul li:nth-child(1)').click(function(){
         window.location.href = './index.html'
     })

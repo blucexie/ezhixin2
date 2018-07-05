@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="telephone=no" />
     <title>易职信-极速线上职业信息背调工具_线上背调_简历核验_职业信用_在线背调_入职背调_背调平台</title>
-    <meta name="keywords" content="易职信,入职背调,背调,在线背调,背景调查,在线极速背调,背调一般需要多长时间,背调怎么做,背调内容有哪些,hr背调,hr背调的方式,hr是如何做背调的,背调报告,背调调查哪些内容,背调价格是多少,背调价格,背调价格是多少合适,芝麻背调,知了背调,小虫背调,蜗牛职信,i背调,萝卜猎手"/>
-    <meta name="description" content="易职信是一款致力于“让简历更加真实”的线上职业信息背调工具，是国内首款在线实时核验应聘人员职业背景信息的职业信用风控平台。以人员应聘登记信息为基础核验元素，以大数据和AI技术为核心，在降低企业面试成本、防范化解招聘风险等方面提供了产品化解决方案。"/>
+    <meta name="keywords" content="易职信,入职背调,背调,在线背调,背景调查,在线极速背调,背调一般需要多长时间,背调怎么做,背调内容有哪些,hr背调,hr背调的方式,hr是如何做背调的,背调报告,背调调查哪些内容,背调价格是多少,背调价格,背调价格是多少合适,芝麻背调,知了背调,小虫背调,蜗牛职信,i背调,萝卜猎手"
+    />
+    <meta name="description" content="易职信是一款致力于“让简历更加真实”的线上职业信息背调工具，是国内首款在线实时核验应聘人员职业背景信息的职业信用风控平台。以人员应聘登记信息为基础核验元素，以大数据和AI技术为核心，在降低企业面试成本、防范化解招聘风险等方面提供了产品化解决方案。"
+    />
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/common.css?v=201806082008">
     <link rel="stylesheet" href="css/homepage.css?v=201806292008">
-    <link rel="bitbug_favicon icon" href="image/bitbug_favicon.ico" >
+    <link rel="bitbug_favicon icon" href="image/bitbug_favicon.ico">
     <script src="libs/jquery-3.2.1.min.js"></script>
     <script>
         function browserRedirect() {
-                var sUserAgent = navigator.userAgent.toLowerCase();
-                var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-                var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-                var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-                var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-                var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-                var bIsAndroid = sUserAgent.match(/android/i) == "android";
-                var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-                var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-                if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-                    window.location.href = 'http://www.ezhixin.com/mobile/';
-                }
-            } 
-            browserRedirect();
-            /*获取ch*/
-            function GetQueryString(name) {
-                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-                var r = window.location.search.substr(1).match(reg);
-                if (r != null) return unescape(r[2]);
-                return null;
+            var sUserAgent = navigator.userAgent.toLowerCase();
+            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+            var bIsAndroid = sUserAgent.match(/android/i) == "android";
+            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+                window.location.href = 'http://www.ezhixin.com/mobile/';
             }
-            var ch = GetQueryString("ch");
-            if(ch!=null && typeof(ch) != "undefined" && ch != ""){
-				document.cookie = "ch=" + ch + ";domain=.ezhixin.com;path=/";
-			}
-            var _hmt = _hmt || [];
-            (function () {
-                var hm = document.createElement("script");
-                hm.src = "https://hm.baidu.com/hm.js?ce696c88e21f3ace529cee2c209d184b";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(hm, s);
-            })();
+        }
+        browserRedirect();
+        /*获取ch*/
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+        var ch = GetQueryString("ch");
+        if (ch != null && typeof (ch) != "undefined" && ch != "") {
+            document.cookie = "ch=" + ch + ";domain=.ezhixin.com;path=/";
+        }
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ce696c88e21f3ace529cee2c209d184b";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
     </script>
 </head>
+
 <body>
     <!-- 一、header部分 -->
     <header>
@@ -59,12 +63,42 @@
             </div>
             <div class="header_m">
                 <ul>
-                    <li class="active h_act"><p><span>首页</span></p><div class="header_display h_active"></div></li>
-                    <li><p><span>服务项目</span></p><div class="header_display"></div></li>
-                    <li><p><span>关于我们</span></p><div class="header_display"></div></li>
-                    <li><p><span>常见问题</span></p><div class="header_display"></div></li>
-                    <li><p><span>新闻中心</span></p><div class="header_display"></div></li>
-                    <li><p><span>下载</span></p><div class="header_display"></div></li>
+                    <li class="active h_act">
+                        <p>
+                            <span>首页</span>
+                        </p>
+                        <div class="header_display h_active"></div>
+                    </li>
+                    <li>
+                        <p>
+                            <span>服务项目</span>
+                        </p>
+                        <div class="header_display"></div>
+                    </li>
+                    <li>
+                        <p>
+                            <span>关于我们</span>
+                        </p>
+                        <div class="header_display"></div>
+                    </li>
+                    <li>
+                        <p>
+                            <span>常见问题</span>
+                        </p>
+                        <div class="header_display"></div>
+                    </li>
+                    <li>
+                        <p>
+                            <span>新闻中心</span>
+                        </p>
+                        <div class="header_display"></div>
+                    </li>
+                    <li>
+                        <p>
+                            <span>下载</span>
+                        </p>
+                        <div class="header_display"></div>
+                    </li>
                 </ul>
             </div>
             <div class="header_phone">
@@ -87,31 +121,53 @@
 
     <!-- 二、banner部分 -->
     <div class="banner">
-        <div class="swiper-container" id="swiper-container-id" style="height: 730px;">
+        <div class="swiper-container" id="swiper-container-id" style="height: 700px;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide one">
                     <div class="banner_out">
                         <div class="banner_banxin clearfix">
-                                <div class="video">
-                                    <video src="http://cdn.funinhr.com/home/intro.mp4" autoplay loop></video>
-                                </div> 
-                            <div class="banner_content">
-                                <img src="image/banner-content1.svg" alt="">
+                            <div class="video">
+                                <video src="http://cdn.funinhr.com/home/intro.mp4" autoplay loop></video>
                             </div>
-                         
+                            <div class="banner1_content">
+                                <img src="image/banner11-content.svg" alt="">
+                            </div>
+                            <div class="btns">
+                                <button class="btn1">免费试用 &gt; </button>
+                                <button class="btn2">观看视频 &gt; </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide two">
-                    <div class="banner_out">        
+                    <div class="banner_out">
                         <div class="banner_banxin clearfix">
-                                <div class="video">
-                                     <video src="http://cdn.funinhr.com/home/intro.mp4" autoplay loop></video>
-                                </div> 
-                            <div class="banner_content1">
-                                <img src="image/banner-content2.svg" alt="">
+                            <div class="video">
+                                <video src="http://cdn.funinhr.com/home/intro.mp4" autoplay loop></video>
                             </div>
-                           
+                            <div class="banner2_content">
+                                <img src="image/banner2-content.svg" alt="">
+                            </div>
+                            <div class="btns">
+                                <button class="btn1">免费试用 &gt; </button>
+                                <button class="btn2">观看视频 &gt; </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide three">
+                    <div class="banner_out">
+                        <div class="banner_banxin clearfix">
+                            <div class="video">
+                                <video src="http://cdn.funinhr.com/home/intro.mp4" autoplay loop></video>
+                            </div>
+                            <div class="banner3_content">
+                                <img src="image/banner3-content.svg" alt="">
+                            </div>
+                            <div class="btns">
+                                <button class="btn1">免费试用 &gt; </button>
+                                <button class="btn2">观看视频 &gt; </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +201,7 @@
             <div class="troubleLast">招聘难</div>
         </div>
     </div>
-    
+
     <!-- 四、介绍部分 -->
     <div class="intro">
         <div class="common_title banxin common_intro">
@@ -185,7 +241,7 @@
                         </div>
                         <p>大幅降低企业招聘成本，节约企业面试时间（低成本、高效率，快速解决企业招聘难题，帮助企业找到合适人才）</p>
                     </li>
-                   
+
                 </ul>
             </div>
         </div>
@@ -260,285 +316,285 @@
 
     <!-- 六、背调服务(翻转) -->
     <div class="service">
-            <div class="common_title banxin common_service">
-                <p class="white">背调服务</p>
-                <span class="white">Back tone service</span>
-                <div class="white_border"></div>
+        <div class="common_title banxin common_service">
+            <p class="white">背调服务</p>
+            <span class="white">Back tone service</span>
+            <div class="white_border"></div>
+        </div>
+        <div class="service_out">
+            <div class="back_service banxin">
+                <ul>
+                    <li class="back_service_box">
+                        <div class="front fanzhuan1">
+                            <div class="back_service_content">
+                                <div class="back_service_title">
+                                    <div class="back_service_title_l">
+                                        全面核验
+                                    </div>
+                                    <div class="back_service_title_r">
+                                        <span>￥</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                                <div class="back_service_t">
+                                    7项核验内容，全面核验候选人，适用于核验高级人才
+                                </div>
+                                <div class="back_service_m">
+                                    <ul>
+                                        <li>
+                                            <span>1</span>调查项目*7</li>
+                                        <li>
+                                            <span>2</span>1s完成核验</li>
+                                        <li>
+                                            <span>3</span>适用于（背调）高级岗位</li>
+                                    </ul>
+                                </div>
+                                <div class="back_service_b">
+                                    开始背调
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back fanzhuan2">
+                            <div class="back_service_content1">
+                                <div class="back_service_title1">
+                                    <div class="back_service_title_l1">
+                                        全面核验
+                                    </div>
+                                    <div class="back_service_title_r1">
+                                        <span>￥</span>
+                                        <span>15</span>
+                                    </div>
+                                </div>
+                                <div class="back_service_t1">
+                                    7项核验内容，全面核验候选人，适用于核验高级人才
+                                </div>
+                                <div class="back_service_m1">
+                                    <ul>
+                                        <li>
+                                            <span>1</span>身份信息核验</li>
+                                        <li>
+                                            <span>2</span>教育背景核验 ( 3份，2001年以后学历 )</li>
+                                        <li>
+                                            <span>3</span>薪资预测</li>
+                                        <li>
+                                            <span>4</span>工作经历核验（3份）</li>
+                                        <li>
+                                            <span>3</span>同事证明核验（3份）</li>
+                                        <li>
+                                            <span>3</span>职业资格核验</li>
+                                        <li>
+                                            <span>3</span>公共治安信息核验</li>
+                                    </ul>
+                                </div>
+                                <div class="back_service_b1">
+                                    开始背调
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="back_service_box">
+                        <div class="front fanzhuan1">
+                            <div class="back_service_content">
+                                <div class="back_service_title">
+                                    <div class="back_service_title_l">
+                                        基本核验
+                                    </div>
+                                    <div class="back_service_title_r">
+                                        <span class="base_one">￥</span>
+                                        <span class="base_two">6</span>
+                                    </div>
+                                </div>
+                                <div class="back_service_t">
+                                    通过身份、教育信息、公共治安信息3项内容核验候选人，适用于核验初、中级人才。
+                                </div>
+                                <div class="back_service_m">
+                                    <ul>
+                                        <li>
+                                            <span>1</span>身份信息核验*3</li>
+                                        <li>
+                                            <span>2</span>1s完成核验</li>
+                                        <li>
+                                            <span>3</span>适用于（背调）初、中级岗位</li>
+                                    </ul>
+                                </div>
+                                <div class="back_service_b">
+                                    开始背调
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back fanzhuan2">
+                            <div class="back_service_content1">
+                                <div class="back_service_title1">
+                                    <div class="back_service_title_l1">
+                                        基本核验
+                                    </div>
+                                    <div class="back_service_title_r1">
+                                        <span class="base_three">￥</span>
+                                        <span class="base_four">6</span>
+                                    </div>
+                                </div>
+                                <div class="back_service_t1">
+                                    通过身份、教育信息、公共治安信息3项内容核验候选人，适用于初、中级人才。
+                                </div>
+                                <div class="back_service_m1">
+                                    <ul>
+                                        <li>
+                                            <span>1</span>身份信息核验</li>
+                                        <li>
+                                            <span>2</span>教育背景核验（3份，2001年以后学历）</li>
+                                        <li>
+                                            <span>3</span>公共治安信息核验</li>
+                                    </ul>
+                                </div>
+                                <div class="back_service_b1">
+                                    开始背调
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="back_service_box">
+                        <div class="front fanzhuan1">
+                            <div class="back_service_content">
+                                <div class="back_service_title">
+                                    <div class="back_service_title_l">
+                                        多项核验
+                                    </div>
+                                    <div class="back_service_title_r">
+                                        <span class="price_l">￥</span>
+                                        <span class="price_r">1</span>
+                                        <span class="price_m">(起)</span>
+                                    </div>
+                                </div>
+                                <div class="back_service_t">
+                                    根据企业自身背调需求，自由组合核验项，满足企业多样化背调需求。
+                                </div>
+                                <div class="back_service_m">
+                                    <ul>
+                                        <li>
+                                            <span>1</span>调查项目*7</li>
+                                        <li>
+                                            <span>2</span>1s完成核验</li>
+                                        <li>
+                                            <span>3</span>适用于多样化的背调岗位</li>
+                                    </ul>
+                                </div>
+                                <div class="back_service_b">
+                                    开始背调
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back fanzhuan2">
+                            <div class="back_service_content1">
+                                <div class="back_service_title1">
+                                    <div class="back_service_title_l1">
+                                        多项核验
+                                    </div>
+                                    <div class="back_service_title_r1">
+                                        <span class="price1_l">￥</span>
+                                        <span class="price1_r">1</span>
+                                        <span class="price1_m">(起)</span>
+                                    </div>
+                                </div>
+                                <div class="back_service_t1">
+                                    根据企业自身背调需求，自由组合核验项，满足企业多样化背调需求。
+                                </div>
+                                <div class="back_service_m1">
+                                    <ul>
+                                        <li>
+                                            <span>1</span>身份信息核验</li>
+                                        <li>
+                                            <span>2</span>教育背景核验 ( 3份，2001年以后学历 )</li>
+                                        <li>
+                                            <span>3</span>薪资预测</li>
+                                        <li>
+                                            <span>4</span>工作经历核验（3份）</li>
+                                        <li>
+                                            <span>5</span>同事证明核验（3份）</li>
+                                        <li>
+                                            <span>6</span>职业资格核验</li>
+                                        <li>
+                                            <span>7</span>公共治安信息核验</li>
+                                    </ul>
+                                </div>
+                                <div class="back_service_b1">
+                                    开始背调
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="back_service_box">
+                        <div class="front fanzhuan1">
+                            <div class="back_service_content">
+                                <div class="back_service_title">
+                                    <div class="back_service_title_l">
+                                        自定义核验
+                                    </div>
+                                    <div class="back_service_title_r">
+                                        <span class="price_l">￥</span>
+                                        <span class="price_r">1</span>
+                                        <span class="price_m">(起)</span>
+                                    </div>
+                                </div>
+                                <div class="back_service_t">
+                                    根据行业，职位自由组合设置套餐，快速核验。
+                                </div>
+                                <div class="back_service_m">
+                                    <ul>
+                                        <li>
+                                            <span>1</span>调查项目*7</li>
+                                        <li>
+                                            <span>2</span>1s完成核验</li>
+                                        <li>
+                                            <span>3</span>适用与多样化的背调岗位</li>
+                                    </ul>
+                                </div>
+                                <div class="back_service_b">
+                                    开始背调
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back fanzhuan2">
+                            <div class="back_service_content1">
+                                <div class="back_service_title1">
+                                    <div class="back_service_title_l1">
+                                        自定义核验
+                                    </div>
+                                    <div class="back_service_title_r1">
+                                        <span class="price1_l">￥</span>
+                                        <span class="price1_r">1</span>
+                                        <span class="price1_m">(起)</span>
+                                    </div>
+                                </div>
+                                <div class="back_service_t1">
+                                    根据行业，职位自由组合设置套餐，快速核验。
+                                </div>
+                                <div class="back_service_m1">
+                                    <ul>
+                                        <li>
+                                            <span>1</span>身份信息核验</li>
+                                        <li>
+                                            <span>2</span>教育背景核验 ( 3份，2001年以后学历 )</li>
+                                        <li>
+                                            <span>3</span>薪资预测</li>
+                                        <li>
+                                            <span>4</span>工作经历核验（3份）</li>
+                                        <li>
+                                            <span>5</span>同事证明核验（3份）</li>
+                                        <li>
+                                            <span>6</span>职业资格核验</li>
+                                        <li>
+                                            <span>7</span>公共治安信息核验</li>
+                                    </ul>
+                                </div>
+                                <div class="back_service_b1">
+                                    开始背调
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="service_out">
-                <div class="back_service banxin">
-                    <ul>
-                        <li class="back_service_box">
-                            <div class="front fanzhuan1">
-                                <div class="back_service_content">
-                                    <div class="back_service_title">
-                                        <div class="back_service_title_l">
-                                            全面核验
-                                        </div>
-                                        <div class="back_service_title_r">
-                                            <span>￥</span>
-                                            <span>15</span>
-                                        </div>
-                                    </div>
-                                    <div class="back_service_t">
-                                        7项核验内容，全面核验候选人，适用于核验高级人才
-                                    </div>
-                                    <div class="back_service_m">
-                                        <ul>
-                                            <li>
-                                                <span>1</span>调查项目*7</li>
-                                            <li>
-                                                <span>2</span>1s完成核验</li>
-                                            <li>
-                                                <span>3</span>适用于（背调）高级岗位</li>
-                                        </ul>
-                                    </div>
-                                    <div class="back_service_b">
-                                        开始背调
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="back fanzhuan2">
-                                <div class="back_service_content1">
-                                    <div class="back_service_title1">
-                                        <div class="back_service_title_l1">
-                                            全面核验
-                                        </div>
-                                        <div class="back_service_title_r1">
-                                            <span>￥</span>
-                                            <span>15</span>
-                                        </div>
-                                    </div>
-                                    <div class="back_service_t1">
-                                        7项核验内容，全面核验候选人，适用于核验高级人才
-                                    </div>
-                                    <div class="back_service_m1">
-                                        <ul>
-                                            <li>
-                                                <span>1</span>身份信息核验</li>
-                                            <li>
-                                                <span>2</span>教育背景核验 ( 3份，2001年以后学历 )</li>
-                                            <li>
-                                                <span>3</span>薪资预测</li>
-                                            <li>
-                                                <span>4</span>工作经历核验（3份）</li>
-                                            <li>
-                                                <span>3</span>同事证明核验（3份）</li>
-                                            <li>
-                                                <span>3</span>职业资格核验</li>
-                                            <li>
-                                                <span>3</span>公共治安信息核验</li>
-                                        </ul>
-                                    </div>
-                                    <div class="back_service_b1">
-                                        开始背调
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="back_service_box">
-                            <div class="front fanzhuan1">
-                                <div class="back_service_content">
-                                    <div class="back_service_title">
-                                        <div class="back_service_title_l">
-                                            基本核验
-                                        </div>
-                                        <div class="back_service_title_r">
-                                            <span class="base_one">￥</span>
-                                            <span class="base_two">6</span>
-                                        </div>
-                                    </div>
-                                    <div class="back_service_t">
-                                        通过身份、教育信息、公共治安信息3项内容核验候选人，适用于核验初、中级人才。
-                                    </div>
-                                    <div class="back_service_m">
-                                        <ul>
-                                            <li>
-                                                <span>1</span>身份信息核验*3</li>
-                                            <li>
-                                                <span>2</span>1s完成核验</li>
-                                            <li>
-                                                <span>3</span>适用于（背调）初、中级岗位</li>
-                                        </ul>
-                                    </div>
-                                    <div class="back_service_b">
-                                        开始背调
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="back fanzhuan2">
-                                <div class="back_service_content1">
-                                    <div class="back_service_title1">
-                                        <div class="back_service_title_l1">
-                                            基本核验
-                                        </div>
-                                        <div class="back_service_title_r1">
-                                            <span class="base_three">￥</span>
-                                            <span class="base_four">6</span>
-                                        </div>
-                                    </div>
-                                    <div class="back_service_t1">
-                                       通过身份、教育信息、公共治安信息3项内容核验候选人，适用于初、中级人才。
-                                    </div>
-                                    <div class="back_service_m1">
-                                        <ul>
-                                            <li>
-                                                <span>1</span>身份信息核验</li>
-                                            <li>
-                                                <span>2</span>教育背景核验（3份，2001年以后学历）</li>
-                                            <li>
-                                                <span>3</span>公共治安信息核验</li>
-                                        </ul>
-                                    </div>
-                                    <div class="back_service_b1">
-                                        开始背调
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="back_service_box">
-                            <div class="front fanzhuan1">
-                                <div class="back_service_content">
-                                    <div class="back_service_title">
-                                        <div class="back_service_title_l">
-                                            多项核验
-                                        </div>
-                                        <div class="back_service_title_r">
-                                            <span class="price_l">￥</span>
-                                            <span class="price_r">1</span>
-                                            <span class="price_m">(起)</span>
-                                        </div>
-                                    </div>
-                                    <div class="back_service_t">
-                                        根据企业自身背调需求，自由组合核验项，满足企业多样化背调需求。
-                                    </div>
-                                    <div class="back_service_m">
-                                        <ul>
-                                            <li>
-                                                <span>1</span>调查项目*7</li>
-                                            <li>
-                                                <span>2</span>1s完成核验</li>
-                                            <li>
-                                                <span>3</span>适用于多样化的背调岗位</li>
-                                        </ul>
-                                    </div>
-                                    <div class="back_service_b">
-                                        开始背调
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="back fanzhuan2">
-                                <div class="back_service_content1">
-                                    <div class="back_service_title1">
-                                        <div class="back_service_title_l1">
-                                            多项核验
-                                        </div>
-                                        <div class="back_service_title_r1">
-                                            <span class="price1_l">￥</span>
-                                            <span class="price1_r">1</span>
-                                            <span class="price1_m">(起)</span>
-                                        </div>
-                                    </div>
-                                    <div class="back_service_t1">
-                                        根据企业自身背调需求，自由组合核验项，满足企业多样化背调需求。
-                                    </div>
-                                    <div class="back_service_m1">
-                                        <ul>
-                                            <li>
-                                                <span>1</span>身份信息核验</li>
-                                            <li>
-                                                <span>2</span>教育背景核验 ( 3份，2001年以后学历 )</li>
-                                            <li>
-                                                <span>3</span>薪资预测</li>
-                                            <li>
-                                                <span>4</span>工作经历核验（3份）</li>
-                                            <li>
-                                                <span>5</span>同事证明核验（3份）</li>
-                                            <li>
-                                                <span>6</span>职业资格核验</li>
-                                            <li>
-                                                <span>7</span>公共治安信息核验</li>
-                                        </ul>
-                                    </div>
-                                    <div class="back_service_b1">
-                                        开始背调
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="back_service_box">
-                            <div class="front fanzhuan1">
-                                <div class="back_service_content">
-                                    <div class="back_service_title">
-                                        <div class="back_service_title_l">
-                                            自定义核验
-                                        </div>
-                                        <div class="back_service_title_r">
-                                            <span  class="price_l">￥</span>
-                                            <span  class="price_r">1</span>
-                                            <span  class="price_m">(起)</span>
-                                        </div>
-                                    </div>
-                                    <div class="back_service_t">
-                                        根据行业，职位自由组合设置套餐，快速核验。
-                                    </div>
-                                    <div class="back_service_m">
-                                        <ul>
-                                            <li>
-                                                <span>1</span>调查项目*7</li>
-                                            <li>
-                                                <span>2</span>1s完成核验</li>
-                                            <li>
-                                                <span>3</span>适用与多样化的背调岗位</li>
-                                        </ul>
-                                    </div>
-                                    <div class="back_service_b">
-                                        开始背调
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="back fanzhuan2">
-                                <div class="back_service_content1">
-                                    <div class="back_service_title1">
-                                        <div class="back_service_title_l1">
-                                            自定义核验
-                                        </div>
-                                        <div class="back_service_title_r1">
-                                            <span class="price1_l">￥</span>
-                                            <span class="price1_r">1</span>
-                                            <span class="price1_m">(起)</span>
-                                        </div>
-                                    </div>
-                                    <div class="back_service_t1">
-                                        根据行业，职位自由组合设置套餐，快速核验。
-                                    </div>
-                                    <div class="back_service_m1">
-                                        <ul>
-                                            <li>
-                                                <span>1</span>身份信息核验</li>
-                                            <li>
-                                                <span>2</span>教育背景核验 ( 3份，2001年以后学历 )</li>
-                                            <li>
-                                                <span>3</span>薪资预测</li>
-                                            <li>
-                                                <span>4</span>工作经历核验（3份）</li>
-                                            <li>
-                                                <span>5</span>同事证明核验（3份）</li>
-                                            <li>
-                                                <span>6</span>职业资格核验</li>
-                                            <li>
-                                                <span>7</span>公共治安信息核验</li>
-                                        </ul>
-                                    </div>
-                                    <div class="back_service_b1">
-                                        开始背调
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        </div>
     </div>
 
     <!-- 七、背调流程 -->
@@ -561,10 +617,10 @@
                                 <img src="image/flow1.svg" alt="">
                                 <img src="image/flow1.svg" alt="">
                             </div>
-                           
+
                             <p>企业委托核验</p>
                         </div>
-    
+
                     </li>
                     <li>
                         <img class="next" src="image/next.png" alt="">
@@ -586,9 +642,9 @@
                         <div class="flow_content">
                             <div class="flow_t">3</div>
                             <div class="flow_img">
-                                    <img src="image/flow3.svg" alt="">
-                                    <img src="image/flow3.svg" alt="">
-                                </div>
+                                <img src="image/flow3.svg" alt="">
+                                <img src="image/flow3.svg" alt="">
+                            </div>
                             <p>付款</p>
                         </div>
                     </li>
@@ -599,9 +655,9 @@
                         <div class="flow_content">
                             <div class="flow_t">4</div>
                             <div class="flow_img">
-                                    <img src="image/flow4.svg" alt="">
-                                    <img src="image/flow4.svg" alt="">
-                                </div>
+                                <img src="image/flow4.svg" alt="">
+                                <img src="image/flow4.svg" alt="">
+                            </div>
                             <p>大数据核验</p>
                         </div>
                     </li>
@@ -612,9 +668,9 @@
                         <div class="flow_content">
                             <div class="flow_t">5</div>
                             <div class="flow_img">
-                                    <img src="image/flow5.svg" alt="">
-                                    <img src="image/flow5.svg" alt="">
-                                </div>
+                                <img src="image/flow5.svg" alt="">
+                                <img src="image/flow5.svg" alt="">
+                            </div>
                             <p>生成报告</p>
                         </div>
                     </li>
@@ -622,7 +678,7 @@
             </div>
         </div>
     </div>
-   
+
     <!-- 八、应用场景 -->
     <div class="sence">
         <div class="common_title banxin sence_padding common_sence">
@@ -643,7 +699,7 @@
                             <div class="sence_l"></div>
                             <div class="sence_r"></div>
                             <div class="sence_cont">
-                                    通过高效的背景调查服务，保障您的雇员质量，不漏过任何潜在的信任危机。
+                                通过高效的背景调查服务，保障您的雇员质量，不漏过任何潜在的信任危机。
                             </div>
                         </div>
                     </li>
@@ -759,50 +815,50 @@
                     <li></li>
                 </ul>
                 <ul class="service_even">
-                        <li></li>
-                        <li>
-                            <div class="partner_img">
-                                <img src="image/service/4.png" alt="">
-                                <img src="image/service/4.png" alt="">
-                            </div>
-                        </li>
-                        <li></li>
-                        <li>
-                            <div class="partner_img">
-                                <img src="image/service/5.png" alt="">
-                                <img src="image/service/5.png" alt="">
-                            </div>
-                        </li>
-                        <li></li>
-                        <li>
-                            <div class="partner_img">
-                                <img src="image/service/6.png" alt="">
-                                <img src="image/service/6.png" alt="">
-                            </div>
-                        </li>
+                    <li></li>
+                    <li>
+                        <div class="partner_img">
+                            <img src="image/service/4.png" alt="">
+                            <img src="image/service/4.png" alt="">
+                        </div>
+                    </li>
+                    <li></li>
+                    <li>
+                        <div class="partner_img">
+                            <img src="image/service/5.png" alt="">
+                            <img src="image/service/5.png" alt="">
+                        </div>
+                    </li>
+                    <li></li>
+                    <li>
+                        <div class="partner_img">
+                            <img src="image/service/6.png" alt="">
+                            <img src="image/service/6.png" alt="">
+                        </div>
+                    </li>
                 </ul>
                 <ul class="service_old">
-                        <li>
-                            <div class="partner_img">
-                                <img src="image/service/7.png" alt="">
-                                <img src="image/service/7.png" alt="">
-                            </div>
-                        </li>
-                        <li></li>
-                        <li>
-                            <div class="partner_img">
-                                <img src="image/service/8.png" alt="">
-                                <img src="image/service/8.png" alt="">
-                            </div>
-                        </li>
-                        <li></li>
-                        <li>
-                            <div class="partner_img">
-                                <img src="image/service/9.png" alt="">
-                                <img src="image/service/9.png" alt="">
-                            </div>
-                        </li>
-                        <li></li>
+                    <li>
+                        <div class="partner_img">
+                            <img src="image/service/7.png" alt="">
+                            <img src="image/service/7.png" alt="">
+                        </div>
+                    </li>
+                    <li></li>
+                    <li>
+                        <div class="partner_img">
+                            <img src="image/service/8.png" alt="">
+                            <img src="image/service/8.png" alt="">
+                        </div>
+                    </li>
+                    <li></li>
+                    <li>
+                        <div class="partner_img">
+                            <img src="image/service/9.png" alt="">
+                            <img src="image/service/9.png" alt="">
+                        </div>
+                    </li>
+                    <li></li>
                 </ul>
                 <ul class="service_even">
                     <li></li>
@@ -830,7 +886,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- 十、新闻资讯 -->
     <div class="news">
         <div class="common_title banxin common_news">
@@ -928,12 +984,12 @@
         </div>
         <div class="line"></div>
         <div class="bottom">
-            @Copright 2016 北京风影职信科技有限公司 京ICP备17026155号-2 
+            @Copright 2016 北京风影职信科技有限公司 京ICP备17026155号-2
         </div>
     </footer>
 
-     <!-- 十三、活动 -->
-     <div class="limit_out">
+    <!-- 十三、活动 -->
+    <div class="limit_out">
         <div class="limit limit_banxin">
             <div class="limit_l">
                 <img src="limit_img/free.svg" alt="">
@@ -943,8 +999,10 @@
                 <div class="limit_intro">
                     活动介绍：
                 </div>
-                <p>(1)即日起注册认证成功的用户即可获得<span>150元</span>背调红包。 </p>
-                <p>(2)前1000家认证通过的企业每天可获得<span>1次免费</span>核验机会，不限核验类型。</p> 
+                <p>(1)即日起注册认证成功的用户即可获得
+                    <span>150元</span>背调红包。 </p>
+                <p>(2)前1000家认证通过的企业每天可获得
+                    <span>1次免费</span>核验机会，不限核验类型。</p>
             </div>
             <div class="limit_btns">
                 <div class="limit_btn btn_login">立即试用</div>
@@ -964,4 +1022,5 @@
     <script src="libs/swiper.min.js"></script>
     <script src="js/homepage.js"></script>
 </body>
+
 </html>
