@@ -61,15 +61,32 @@
     height: 100%;
     display: inline-block;
 }
-.one>img{
+.one{
+    height: 700px;
     width: 100%;
+    /*  background-image: url(http://cdn.funinhr.com/home/image/banner1.png); */
+     background-image: url(../image/banner1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.two>img{
+.two{
+    height: 700px;
     width: 100%;
+   /*  background-image: url(http://cdn.funinhr.com/home/image/banner2.png); */
+    background-image: url(../image/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.three>img{
+.three{
+    height: 700px;
     width: 100%;
+    background-image: url(../image/banner3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+/* .one>img,.two>img,.three>img{
+     width: 100%; 
+} */
 
 .consult{
     width: 150px;
@@ -120,7 +137,7 @@ video{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 10%;
+    bottom: 80px;
 }
 .btns>button{
     width: 166px;
@@ -149,40 +166,28 @@ video{
     background-color: #eeebeb;
 }
 .banner1_content{
-    width: 60%;
-    height: 36%;
+    width: 800px;
     position: absolute;
-    top: 28%;
+    top: 235px;
     left: 50%;
     transform: translateX(-50%);
 }
 .banner2_content{
-    width: 50%;
-    height: 44%;
+    width: 600px;
     position: absolute;
-    top: 24%;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
 }
 .banner3_content{
-    width: 60%;
-    height: 48%;
+    width: 700px;
     position: absolute;
-    top: 24%;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
 }
 .banner1_content>img{
     width: 100%;;
-    height: 100%;
-}
-.banner2_content>img{
-    width: 100%;;
-    height: 100%;
-}
-.banner3_content>img{
-    width: 100%;;
-    height: 100%;
 }
 .swiper-pagination-bullet{
     width: 37px;
@@ -195,7 +200,7 @@ video{
     background-color: #ffffff;
 }
 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-    bottom: 5%;
+    bottom: 40px;
 }
 
 /* 三、招聘遇到的困难 */
@@ -361,6 +366,7 @@ video{
 .intro{
     width: 100%;
     height: 570px;
+    /* background-image: url(http://cdn.funinhr.com/home/image/intro.png); */
     background-image: url(../image/intro-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -371,6 +377,7 @@ video{
 .intro_out{
     position: relative;
     top: 204px;
+    /* right: -1500px; */
 }
 .intro_content{
     height: 548px;
@@ -442,6 +449,7 @@ video{
 }
 .advantage{
     overflow: hidden;
+    /* background-color: yellow; */
     padding: 20px 0;
 }
 .advantage ul li{

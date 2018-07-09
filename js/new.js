@@ -17,6 +17,10 @@ $.ajax({
             }
             var cid = v.cid;
             var time = v.time;
+           var timeNyr = time.substr(0,10);
+           var timeSfm = time.substr(11,8);
+
+
             var a = Number(time.substr(5,1));
             var timeMonth;
             if(a<1){
@@ -37,11 +41,11 @@ $.ajax({
             var titleLength = title.length;
             var imgUrl = v.imgUrl;
             var newsUrl = v.newsUrl;
-            if (titleLength>60) {
-                title = title.substring(0,60) + '...';
+            if (titleLength>25) {
+                title = title.substring(0,25) + '...';
             }
-            if (descriptionLength>180) {
-                description = description.substring(0, 180) + '...';
+            if (descriptionLength>56) {
+                description = description.substring(0, 56) + '...';
             }
             var content =
            
@@ -51,15 +55,14 @@ $.ajax({
                     '<span>'+timeMonth+'</span>'+'<span>'+'月'+'</span>'+'<span>'+timeData+'</span>'+'<span>'+'日'+'</span>'+
                 '</div>'+
                 '<div class="news_box"> '+   
-                        '<div class="news_l">'+
-                            '<p class="newsTitle">'+title+'</p>'+
-                            '<div class="cutOff">'+'</div>'+
-                            '<p class="news_con">'+description+'</p>'+
-                            '<span class="news_more">'+'查看全部》'+'</span>'+
-                        '</div>'+
                         '<div class="news_r">'+
                             '<img src="'+imgUrl+'" alt="">'+
                         '</div>'+
+                        '<div class="news_l">'+
+                        '<p class="newsTitle">'+title+'</p>'+
+                        '<div class="cutOff">'+timeNyr+'<span class="sfm">'+timeSfm+'<span>'+'</div>'+
+                        '<p class="news_con">'+description+'</p>'+
+                    '</div>'+
                 '</div>'+
             '</li>'
             
@@ -70,8 +73,8 @@ $.ajax({
 
   
 })
-$('.news').on('click','.news_more',function(){
-    var newsUrl = $(this).parent().parent().parent().attr('newsUrl');
+$('.news').on('click','.news_box',function(){
+    var newsUrl = $(this).parent().attr('newsUrl');
     window.location.href = newsUrl;
 })
 
@@ -96,6 +99,8 @@ $('.check_btn').click(function () {
                     $('.check_btn').remove();
                 }
                 var time = v.time;
+                var timeNyr = time.substr(0,10);
+                var timeSfm = time.substr(11,8);
                 var a = Number(time.substr(5, 1));
                 var timeMonth;
                 if (a < 1) {
@@ -115,30 +120,29 @@ $('.check_btn').click(function () {
                 var descriptionLength = description.length;
                 var titleLength = title.length;
                 var imgUrl = v.imgUrl;
-                if (titleLength > 60) {
-                    title = title.substring(0, 60) + '...';
+                if (titleLength > 25) {
+                    title = title.substring(0, 25) + '...';
                 }
-                if (descriptionLength > 200) {
-                    description = description.substring(0, 200) + '...';
+                if (descriptionLength > 56) {
+                    description = description.substring(0, 56) + '...';
                 }
                 var content =
-                    '<li cid="' + cid + '" newsUrl="'+newsUrl+'">' +
-                    '<div class="data">' +
-                    '<div class="data_l">' + '</div>' +
-                    '<span>' + timeMonth + '</span>' + '<span>' + '月' + '</span>' + '<span>' + timeData + '</span>' + '<span>' + '日' + '</span>' +
-                    '</div>' +
-                    '<div class="news_box"> ' +
-                    '<div class="news_l">' +
-                    '<p class="newsTitle">' + title + '</p>' +
-                    '<div class="cutOff">' + '</div>' +
-                    '<p class="news_con">' + description + '</p>' +
-                    '<span class="news_more">' + '查看全部》' + '</span>' +
-                    '</div>' +
-                    '<div class="news_r">' +
-                    '<img src="' + imgUrl + '" alt="">' +
-                    '</div>' +
-                    '</div>' +
-                    '</li>'
+                    '<li cid="' + cid + '" newsUrl="' + newsUrl + '">' +
+                        '<div class="data">' +
+                        '<div class="data_l">' + '</div>' +
+                        '<span>' + timeMonth + '</span>' + '<span>' + '月' + '</span>' + '<span>' + timeData + '</span>' + '<span>' + '日' + '</span>' +
+                        '</div>' +
+                        '<div class="news_box"> ' +
+                        '<div class="news_r">' +
+                        '<img src="' + imgUrl + '" alt="">' +
+                        '</div>' +
+                        '<div class="news_l">' +
+                        '<p class="newsTitle">' + title + '</p>' +
+                        '<div class="cutOff">'+timeNyr+'<span class="sfm">'+timeSfm+'<span>'+'</div>'+
+                        '<p class="news_con">' + description + '</p>' +
+                        '</div>' +
+                        '</div>' +
+                        '</li>'
                 contentList += content;
             })
             var contentUl = '<ul>' + contentList + '</ul>'

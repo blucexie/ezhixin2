@@ -1,0 +1,157 @@
+.banner{
+    min-width: 1100px;
+}
+.banner img{
+    width: 100%;
+}
+/* 公共头部 */
+
+.common_title{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 28px;
+    color: #333;
+}
+.common_title span{
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #666;
+}
+.common_title>div{
+    width: 32px;
+    border: 2px solid #00adb4;
+    position: relative;
+    display: inline-block;
+    top: -10px;
+}
+.common_bottom{
+    padding-bottom: 43px !important;
+}
+
+/* 公司介绍 */
+.intro{
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.intro_l{
+    width: 380px;
+    height: 300px;
+}
+.intro_l>img{
+    width: 380px;
+    height: 300px;
+    margin-top: 40px;
+}
+.intro_r{
+    width: 666px;
+    margin-top: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+}
+.intro_r p{
+    text-indent: 28px;
+    line-height: 28px;
+}
+
+
+/* 我们的优势 */
+.old{
+    width: 100%;
+    padding-bottom: 54px;
+    background-color: #f4f5f9;
+}
+.out_advantage{
+    width: 100%;
+}
+.advantage{
+    overflow: hidden;
+}
+.advantage ul li{
+    width: 275px;
+    padding: 24px 0;
+    margin-top: 20px;
+    float: left;
+}
+.advantage_box{
+    width: 230px;
+    height: 260px;
+    margin: 0 22px;
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 0px 24px #e1e5ee;
+} 
+.advantage_t{
+    text-align: center;
+}
+.advantage_t>img{
+    margin-top: 48px;
+    width: 106px;
+    height: 106px;
+}
+.advantage_b{
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* 文化 */
+.culture{
+    height: 260px;
+    margin-bottom: 96px;
+    margin-top: 44px;
+}
+.culture_m>img{
+    width: 260px;
+    height: 260px;
+    margin-left: 60px;
+}
+.culture_content{
+    width: 360px;
+    height: 95px;
+    border: 1px solid #00adb4;
+    border-radius: 10px;
+    position: relative;
+}
+.culture_two{
+    margin-top: 66px;
+}
+.content_right{
+    text-align: right;
+}
+.content_l{
+    width: 248px;
+}
+.content_l p:nth-child(1){
+    margin-top: 26px;
+    font-size: 14px;
+    color: #333333;
+}
+.content_l p:nth-child(2){
+    margin-top: 6px;
+    color: #fe4646;
+}
+.content_r{
+    width: 110px;
+    height: 95px;
+    text-align: center;
+}
+.content_r>img{
+    margin-top: 24px;
+    width: 50px;
+    height: 50px;
+}
+.triangle1{
+    position: absolute;
+    top: 10px;
+    right: -15px;
+}
+.triangle2{
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 10px;
+   left: -15px;
+}
