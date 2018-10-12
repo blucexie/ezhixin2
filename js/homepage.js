@@ -1,12 +1,6 @@
 ﻿
 $(function () {
 
-    var userAgent = navigator.userAgent; 
-     var isChrome = (userAgent.indexOf("Chrome") > -1 || userAgent.indexOf("Safari") > -1)&&userAgent.indexOf("Edge") == -1&&userAgent.indexOf("QQBrowser") == -1 ; 
-    if(isChrome){
-        $('video').remove();
-    }
-
     var flagTrouble = true;
     var flagIntro = true;
     var flagAdvantage = true;
@@ -154,10 +148,7 @@ $(function () {
         window.location.href = newsUrl;
     })
 
-    //背调跳转
-    $('.back_service_b1').click(function(){
-        window.location.href = "http://hr.ezhixin.com/login"
-    })
+   
 
     $('.word').click(function(){
         $('.limit_bg').fadeIn(500);
@@ -173,11 +164,31 @@ $(function () {
         $('.limit_btns').fadeOut(500);
         $('.limit_r').fadeOut(500);
     })
-    $('.btn_login').click(function(){
-        window.location.href ="http://hr.ezhixin.com/login";
+
+    
+    //按钮跳转登录页
+    $('.back_service_b1').click(function(){
+        window.open("http://hr.ezhixin.com/login");
     })
-    $('.btn_download').click(function(){
-        window.location.href = './download.html'
+
+    $('.btn1').click(function(){
+        window.open("http://hr.ezhixin.com/login");
+    })
+
+    $('.btn_login').click(function(){
+        window.open("http://hr.ezhixin.com/login");
+    })
+
+    var Media = document.getElementById("video");
+    $('.btn2').click(function(){
+        $('#newBridge').hide();
+        $('.zhezhao_out').show();
+        Media.play(); 
+    })
+    $('.video_close').click(function(){
+        $('.zhezhao_out').hide();
+        $('#newBridge').show();
+        Media.paused(); 
     })
 });
 

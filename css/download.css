@@ -1,6 +1,7 @@
 
 main{
     width: 100%;
+    height: 1025px;
     background: url('http://cdn.funinhr.com/home/image/downloadbg.jpg')no-repeat;
     background-size: cover;
     padding-top: 0.1px;
@@ -10,10 +11,9 @@ main{
 .content{
     width: 1100px;
     margin: 226px auto 240px;
-  /*   border: 1px solid #f00; */
 }
 .content-left{
-    margin-right: 64px;
+    margin-right: 60px;
 }
 .content-left>img{
     margin-left: -30px;
@@ -27,8 +27,7 @@ main{
 }
 .right-title>img{
     float: left;
-    width: 140px;
-    height: 140px;
+    width: 120px;
     margin-right: 42px;
 }
 .right-title>div{
@@ -37,10 +36,12 @@ main{
 .right-title>div h2{
     font-size: 50px;
     color: #333;
-    margin-top: 10px;
+    margin-top: 6px;
+    letter-spacing: 16px;
 }
 .right-title>div  p{
-    font-size: 30px;
+    font-size: 24px;
+    margin-top: 3px;
 }
 .content-right>p{
     font-size: 28px;
@@ -62,6 +63,7 @@ main{
     width: 40px;
     height: 40px;
     margin-right: 20px;
+    margin-top: 4px;
 }
 .ios{
     margin-top: 20px;

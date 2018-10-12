@@ -44,8 +44,8 @@ $.ajax({
             if (titleLength>25) {
                 title = title.substring(0,25) + '...';
             }
-            if (descriptionLength>56) {
-                description = description.substring(0, 56) + '...';
+            if (descriptionLength>45) {
+                description = description.substring(0, 45) + '...';
             }
             var content =
            
@@ -75,7 +75,7 @@ $.ajax({
 })
 $('.news').on('click','.news_box',function(){
     var newsUrl = $(this).parent().attr('newsUrl');
-    window.location.href = newsUrl;
+    window.open(newsUrl);
 })
 
 
@@ -123,8 +123,8 @@ $('.check_btn').click(function () {
                 if (titleLength > 25) {
                     title = title.substring(0, 25) + '...';
                 }
-                if (descriptionLength > 56) {
-                    description = description.substring(0, 56) + '...';
+                if (descriptionLength > 45) {
+                    description = description.substring(0, 45) + '...';
                 }
                 var content =
                     '<li cid="' + cid + '" newsUrl="' + newsUrl + '">' +

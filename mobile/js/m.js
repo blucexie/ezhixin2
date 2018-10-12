@@ -271,3 +271,9 @@ $('.news').on('click','.news_content span',function(){
     var cid = $(this).parent().parent().parent().attr('cid');
     window.location.href = cid;
 })
+$('.btn_login').click(function(){
+    window.location.href = "http://cdn.funinhr.com/online/channel/index.html?uc=K3A6IX2H";
+})
+$('.btn_download').click(function(){
+    window.location.href = "http://cdn.funinhr.com/package/qrDownload.html";
+})

@@ -75,36 +75,125 @@ body {
 /* 1、header部分 */
 .header {
   padding-top: 0.1px;
-  height: 8.16rem;
-  background: url(http://cdn.funinhr.com/home/mobile/image/header-bg.png) no-repeat;
-  background-size: 15rem 8.16rem;
+  height: 13.2rem;
+  background: url(../img/banner.png) no-repeat;
+  background-size: 100% 10.8rem;
   position: relative;
+  text-align: center;
+  background-color: #ffffff;
 }
 
-.companyProfile {
-  display: flex;
-  justify-content: center;
-  margin: 5rem auto 0;
+.logo_box{
+  margin: 1.74rem auto 0;
+  text-align: center;
+  display: inline-block;
+  width: 7.2rem;
 }
-.companyProfile > p {
-  width: 10.6rem;
-  font-size: 0.4rem;
+.logo_box>img{
+  width: 2.58rem;
+  float: left;
+}
+.logo_box_r{
   color: #ffffff;
-  text-indent: 1rem;
+  text-align: left;
 }
-.header_img{
-  width: 1.36rem;
-  height: 1.36em;
-  position: absolute;
-  left: 50%;
-  bottom: -0.68rem;
-  transform: translateX(-0.68rem);
+.logo_box_r>p{
+  font-size: 1.22rem;
+  letter-spacing: 0.2rem;
+  line-height: 1rem;
+  margin-top: 0.3rem;
 }
-.header_img>img{
-  width: 100%;
-  height: 100%;
+.logo_box_r>span{
+  font-size: 0.72rem;
+}
+.advert{
+  line-height: 0;
+  font-size: 0.72rem;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.08rem;
+}
+.advert span{
+  display: inline-block;
+  font-size: 2rem;
+  position: relative;
+  transform: translateY(0.4rem);
+}
+.btns_box{
+  text-align: center;
+  overflow: hidden;
+  margin-top: 1.2rem;
+}
+.btns{
+  display: inline-block;
+}
+.btn{
+  width: 4.4rem;
+  height: 1.46rem;
+  text-align: center;
+  font-size: 0.64rem;
+  line-height: 1.46rem;
+  margin: 0 0.2rem;
+  float: left;
+  border-radius: 5px;
+}
+.btn_login{
+  color: #666;
+  background-color: #fff;
+}
+.btn_download{
+  border: 0.03rem solid #fff;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  color: #ffffff;
 }
 
+.header_img{
+    width: 11.2rem;
+    height: 4.24rem;
+    padding: 0.44rem 0.8rem 0.68rem 0.8rem;
+    position: absolute;
+    left: 50%;
+    bottom: -0.5rem;
+    transform: translateX(-50%);
+    background: url(../img/introduction-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.new_activity{
+  font-size: 0.48rem;
+    color: #333333;
+    letter-spacing: 0.2rem;
+    margin-top: 0.36rem;
+}
+.new_activity img{
+    width: 0.4rem;
+}
+.new_activity span{
+  margin-left: 0.2rem;
+}
+.activity{
+  font-size: 0.48rem;
+  text-align: left;
+  padding-left: 1rem;
+  position: relative;
+  color: #666;
+}
+.activity:nth-child(2){
+  margin-top: 0.74rem;
+}
+.activity span{
+  font-size: 0.48rem;
+  color: #ff8400;
+  font-weight: 700;
+}
+.tip{
+  width: 0.16rem;
+  height: 0.16rem;
+  background-color: #ff8400;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.6rem;
+}
 
 /* 2、核验类型介绍 */
 .section1_box {
